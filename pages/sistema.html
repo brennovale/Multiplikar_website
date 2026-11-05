@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplikar Automóveis — Sistema ao vivo</title>
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  <style>
+    .sistema-status{display:inline-flex;align-items:center;gap:var(--espaco-s);padding:var(--espaco-xs) var(--espaco-m);border-radius:var(--raio-borda-pilula);background:var(--cor-card);border:1px solid var(--cor-borda);font-size:var(--tamanho-texto-s)}
+    .sistema-status i{width:.6rem;height:.6rem;border-radius:50%;background:var(--cor-texto-mutado);display:inline-block}
+    .sistema-status.vivo i{background:var(--cor-sucesso)}.sistema-status.salvo i{background:#d97706}
+    .sistema-grade{display:grid;gap:var(--espaco-m);grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+    .sistema-card{background:var(--cor-card);border:1px solid var(--cor-borda);border-radius:var(--raio-borda-l);padding:var(--espaco-l);box-shadow:var(--sombra-s)}
+    .sistema-card.destaque{border-top:6px solid var(--cor-destaque)}
+    .sistema-card h3{margin-top:0}
+    .sistema-valor{font-size:var(--tamanho-texto-xxl);font-weight:700;color:var(--cor-primaria);line-height:1.1;margin:0}
+    .sistema-card dl{margin:var(--espaco-m) 0 0;display:grid;grid-template-columns:auto auto;gap:var(--espaco-xs) var(--espaco-m)}
+    .sistema-card dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+    .sistema-nota{background:var(--cor-card);border-left:4px solid var(--cor-primaria);border-radius:var(--raio-borda-m);padding:var(--espaco-m)}
+    .sistema-abas{display:flex;flex-wrap:wrap;gap:var(--espaco-s);margin-bottom:var(--espaco-m)}
+    .sistema-abas button[aria-pressed="false"]{background:var(--cor-card) !important;color:var(--cor-texto) !important;border:1px solid var(--cor-borda) !important}
+    .sistema-grafico{background:var(--cor-card);border:1px solid var(--cor-borda);border-radius:var(--raio-borda-l);padding:var(--espaco-m);overflow-x:auto;color:var(--cor-texto)}
+    .sistema-grafico svg{display:block;width:100%;min-width:32rem;height:auto}
+    .sistema-fila{list-style:none;padding:0}
+    .sistema-fila li{background:var(--cor-card);border:1px solid var(--cor-borda);border-left:6px solid var(--cor-alerta);border-radius:var(--raio-borda-m);padding:var(--espaco-m);margin-bottom:var(--espaco-s)}
+    .sistema-selo{display:inline-block;padding:0 var(--espaco-s);border-radius:var(--raio-borda-pilula);background:var(--cor-fundo);border:1px solid var(--cor-borda);font-size:var(--tamanho-texto-xs);font-weight:700}
+    .sistema-ok{color:var(--cor-sucesso);font-weight:700}.sistema-falha{color:var(--cor-alerta);font-weight:700}
+    .sistema-tabela{overflow-x:auto}
+  </style>
+</head>
+<body>
+
+    <!-- BARRA DE TOPO INSTITUCIONAL -->
+  <div class="cabecalho-barra-topo">
+    <span>Multiplikar Automóveis &bull; Vila São Geraldo &bull; Atendimento: (11) 2647-4000</span>
+  </div>
+
+  <!-- CABEÇALHO COM NAVEGAÇÃO STICKY E MOBILE-FIRST -->
+  <header class="cabecalho-site">
+    <div class="cabecalho-conteiner">
+      <a href="../index.html" class="marca-link">
+        <img src="../assets/img/logo-loja.jpg" alt="Logotipo da empresa Multiplikar Automóveis" class="marca-logo-img" width="200" height="100">
+      </a>
+
+      <button type="button" class="controle-tema" data-controle-tema aria-label="Ativar tema escuro" aria-pressed="false"><span aria-hidden="true">&#9790;</span><span data-rotulo-tema>Modo escuro</span></button>
+
+      <!-- Controle de Abertura do Menu no Smartphone -->
+      <button type="button" class="menu-toggle-label" data-menu-toggle aria-label="Abrir menu principal" aria-expanded="false" aria-controls="menu-principal">
+        <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+
+      <!-- Navegação Principal -->
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="lista-nav">
+          <li class="item-nav"><a href="../index.html" class="link-nav">Início</a></li>
+          <li class="item-nav">
+            <a href="estoque.html" class="link-nav">Estoque</a>
+            <ul class="submenu-nav" aria-label="Submenu Estoque">
+              <li><a href="estoque.html" class="link-nav">Todos os Veículos</a></li>
+              <li><a href="vendas.html" class="link-nav">Vendas e Pagamentos</a></li>
+            </ul>
+          </li>
+          <li class="item-nav"><a href="compra-veiculos.html" class="link-nav">Compramos Seu Carro</a></li>
+          <li class="item-nav"><a href="consignacao.html" class="link-nav">Consignação</a></li>
+          <li class="item-nav"><a href="avaliacao.html" class="link-nav">Laudo Cautelar</a></li>
+          <li class="item-nav"><a href="financiamento.html" class="link-nav">Financiamento</a></li>
+          <li class="item-nav"><a href="garantia.html" class="link-nav">Garantia</a></li>
+          <li class="item-nav"><a href="contato.html" class="link-nav">Contato</a></li>
+          <li class="item-nav">
+            <a href="orcamento.html" class="btn btn-destaque">Solicitar Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main class="conteiner-principal">
+    <article>
+      <h1>Sistema ao vivo — banco de dados da Multiplikar</h1>
+      <p>Esta página consulta, em tempo real, o banco de dados PostgreSQL desenvolvido no Projeto Integrador de Modelagem de Dados. Os dados são fictícios, criados para testar as regras do negócio da loja.</p>
+      <p>Os pedidos de orçamento e as mensagens de contato do site também são gravados neste banco. Os leads, com a classificação quente, morna ou fria e a revisão do vendedor, ficam na área do vendedor, protegida por senha, porque têm dados pessoais (LGPD).</p>
+      <p class="sistema-status" id="status" role="status"><i></i><span>Conectando ao banco…</span></p>
+    </article>
+
+    <section aria-labelledby="t-propostas">
+      <h2 id="t-propostas">Mesmo preço, caixa diferente</h2>
+      <p>Três propostas para o mesmo Renault Kwid de R$ 55.000. A margem da loja é igual nas três; o dinheiro que entra no caixa, não.</p>
+      <div class="sistema-grade" id="propostas"></div>
+      <p class="sistema-nota">O Kwid é consignado: a loja deve R$ 50.000 ao proprietário em dinheiro. Na proposta C entram só R$ 25.000 em espécie, e o carro recebido na troca vira estoque, não caixa.</p>
+    </section>
+
+    <section aria-labelledby="t-retorno">
+      <h2 id="t-retorno">Financiamento: o que a loja ganha e o que o cliente paga</h2>
+      <p>Simulação de R$ 44.000 em 48 meses em duas tabelas de retorno do banco.</p>
+      <div class="sistema-grade" id="simulacoes"></div>
+      <p class="sistema-nota" id="retorno-resumo"></p>
+    </section>
+
+    <section aria-labelledby="t-caixa">
+      <h2 id="t-caixa">Previsão de caixa por semana</h2>
+      <p>Soma o que já entrou, as contas a pagar e a receber e as propostas abertas, ponderadas pela chance de fechar. O saldo inicial de R$ 25.000 é uma hipótese.</p>
+      <div class="sistema-abas" role="group" aria-label="Cenário da previsão">
+        <button type="button" class="btn btn-primario" data-cenario="BASE" aria-pressed="true">Cenário base</button>
+        <button type="button" class="btn btn-primario" data-cenario="BANCO_ATRA_15_DIAS" aria-pressed="false">Banco atrasa 15 dias</button>
+        <button type="button" class="btn btn-primario" data-cenario="LEADS_QUENTES_NAO_FECHAM" aria-pressed="false">Clientes quentes não fecham</button>
+      </div>
+      <div class="sistema-grafico" id="grafico"></div>
+      <div class="sistema-tabela">
+        <table>
+          <caption>Como o saldo do cenário base é formado, semana a semana</caption>
+          <thead><tr><th scope="col">Semana</th><th scope="col">Já realizado</th><th scope="col">Contas a receber e a pagar</th><th scope="col">Propostas ponderadas</th><th scope="col">Saldo projetado</th></tr></thead>
+          <tbody id="camadas"></tbody>
+        </table>
+      </div>
+      <p class="sistema-nota">As contas a receber e a pagar seguem os estados do projeto: prevista, aberta, atrasada, quitada ou cancelada. Quitadas e canceladas não entram na previsão. As propostas abertas entram multiplicadas pela chance de fechar de cada temperatura do lead.</p>
+    </section>
+
+    <section aria-labelledby="t-fila">
+      <h2 id="t-fila">Fila de ações do dia</h2>
+      <p>Pendências de atendimento, caixa e estoque numa lista só, da maior para a menor quantia em risco.</p>
+      <ul class="sistema-fila" id="fila"></ul>
+    </section>
+
+    <section aria-labelledby="t-regras">
+      <h2 id="t-regras">Teste as regras do banco</h2>
+      <p>O botão tenta gravar de verdade oito operações proibidas, das regras da primeira entrega e da extensão. O banco tem que recusar todas, e a tentativa é sempre desfeita.</p>
+      <button type="button" class="btn btn-destaque" id="testar">Tentar gravar dados inválidos</button>
+      <div class="sistema-grade" id="resultado-testes" style="margin-top: var(--espaco-m);" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="t-estoque">
+      <h2 id="t-estoque">Situação dos veículos no banco</h2>
+      <div class="sistema-tabela">
+        <table>
+          <caption>Situação calculada pelo banco a partir do histórico de entradas e vendas</caption>
+          <thead><tr><th scope="col">Veículo</th><th scope="col">Ano</th><th scope="col">Categoria</th><th scope="col">Situação</th></tr></thead>
+          <tbody id="estoque"></tbody>
+        </table>
+      </div>
+      <p id="referencia"></p>
+    </section>
+  </main>
+
+  <script>
+    const brl = v => Number(v).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    const pct = v => (Number(v) * 100).toLocaleString('pt-BR', { maximumFractionDigits: 1 }) + '%';
+    const dia = s => new Date(s + 'T12:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
+    const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const NOMES = { A: 'Proposta A · Pix integral', B: 'Proposta B · 20% Pix + financiamento', C: 'Proposta C · Pix + carro na troca' };
+    const CATEGORIA = { NOVO: 'Novo', SEMINOVO: 'Seminovo', USADO: 'Usado' };
+    const SITUACAO = { DISPONIVEL: 'Disponível', EM_FORMALIZACAO: 'Em formalização', VENDIDO: 'Vendido', FORA_DO_ESTOQUE: 'Fora do estoque' };
+    let salvo = null, aoVivo = true;
+
+    async function dadosSalvos() {
+      if (!salvo) salvo = await (await fetch('../assets/dados/multiplikar-snapshot.json')).json();
+      return salvo;
+    }
+    async function api(rota) {
+      try {
+        const r = await fetch('/api/multiplikar?r=' + encodeURIComponent(rota));
+        if (!r.ok) throw new Error(r.status);
+        return await r.json();
+      } catch (e) {
+        aoVivo = false;
+        return (await dadosSalvos()).rotas[rota];
+      }
+    }
+    function mostrarStatus() {
+      const el = document.getElementById('status');
+      el.className = 'sistema-status ' + (aoVivo ? 'vivo' : 'salvo');
+      el.querySelector('span').textContent = aoVivo
+        ? 'Ao vivo: dados lidos agora do banco'
+        : 'Banco fora do ar: mostrando dados salvos em ' + new Date(salvo.gerado_em).toLocaleString('pt-BR');
+    }
+    function propostas(lista) {
+      document.getElementById('propostas').innerHTML = lista.map(p => `
+        <article class="sistema-card ${p.rotulo === 'C' ? 'destaque' : ''}">
+          <h3>${esc(NOMES[p.rotulo] || p.rotulo)}</h3>
+          <p class="sistema-valor">${brl(p.caixa_d0)}</p><p>em caixa no dia</p>
+          <dl><dt>Caixa depois</dt><dd>${brl(p.caixa_posterior)}</dd>
+          <dt>Em troca</dt><dd>${brl(p.valor_em_troca)}</dd>
+          <dt>Margem</dt><dd>${brl(p.margem_estimada)}</dd>
+          <dt>Retorno do banco</dt><dd>${brl(p.retorno_banco)}</dd>
+          <dt>Margem com retorno</dt><dd>${brl(p.margem_com_retorno)}</dd></dl>
+        </article>`).join('');
+    }
+    function simulacoes(lista) {
+      document.getElementById('simulacoes').innerHTML = lista.map(s => `
+        <article class="sistema-card ${Number(s.retorno_loja) > 0 ? 'destaque' : ''}">
+          <h3>Tabela ${esc(s.tabela_retorno)}</h3>
+          <p class="sistema-valor">${brl(s.parcela_calculada)}</p><p>por mês, 48 parcelas</p>
+          <dl><dt>Total pago pelo cliente</dt><dd>${brl(s.custo_total_cliente)}</dd>
+          <dt>Taxa ao mês</dt><dd>${pct(s.taxa_cliente_mensal)}</dd>
+          <dt>CET aproximado ao ano</dt><dd>${pct(s.cet_aproximado_anual)}</dd>
+          <dt>Loja recebe do banco</dt><dd>${brl(s.retorno_loja)}</dd></dl>
+        </article>`).join('');
+      if (lista.length >= 2) {
+        const [a, b] = [...lista].sort((x, y) => x.custo_total_cliente - y.custo_total_cliente);
+        document.getElementById('retorno-resumo').innerHTML =
+          `Na tabela ${esc(b.tabela_retorno)}, o cliente paga <strong>${brl(b.custo_total_cliente - a.custo_total_cliente)} a mais</strong> para a loja receber <strong>${brl(b.retorno_loja)}</strong> do banco. Por isso o sistema mostra sempre o lado do cliente.`;
+      }
+    }
+    function grafico(pontos) {
+      const L = 70, T = 30, W = 900, H = 300, B = 60;
+      const vals = pontos.map(p => Number(p.saldo_projetado));
+      const max = Math.max(0, ...vals) * 1.15 || 1, min = Math.min(0, ...vals) * 1.15;
+      const y = v => T + (max - v) / (max - min) * H;
+      const passo = (W - L) / pontos.length, larg = Math.min(110, passo * 0.6);
+      let svg = `<svg viewBox="0 0 ${W + 20} ${T + H + B}" role="img" aria-label="Saldo projetado por semana">`;
+      svg += `<line x1="${L}" x2="${W}" y1="${y(0)}" y2="${y(0)}" stroke="currentColor" stroke-opacity=".35"/>`;
+      pontos.forEach((p, i) => {
+        const v = Number(p.saldo_projetado), x = L + passo * i + (passo - larg) / 2;
+        const topo = Math.min(y(v), y(0)), h = Math.max(2, Math.abs(y(v) - y(0)));
+        svg += `<rect x="${x}" y="${topo}" width="${larg}" height="${h}" rx="4" style="fill:${v < 0 ? 'var(--cor-alerta)' : 'var(--cor-primaria)'}"/>`;
+        svg += `<text x="${x + larg / 2}" y="${v < 0 ? topo + h + 18 : topo - 8}" text-anchor="middle" font-size="15" font-weight="600" fill="currentColor">${brl(v)}</text>`;
+        svg += `<text x="${x + larg / 2}" y="${T + H + 28}" text-anchor="middle" font-size="14" fill="currentColor" fill-opacity=".75">${dia(p.semana)}</text>`;
+      });
+      document.getElementById('grafico').innerHTML = svg + '</svg>';
+    }
+    function camadas(lista) {
+      document.getElementById('camadas').innerHTML = lista.map(c =>
+        `<tr><td>${dia(c.semana)}</td><td>${brl(c.realizado)}</td><td>${brl(c.obrigacoes)}</td><td>${brl(c.funil_ponderado)}</td><td><strong>${brl(c.saldo_projetado)}</strong></td></tr>`).join('');
+    }
+    function fila(lista) {
+      document.getElementById('fila').innerHTML = lista.map(f => `
+        <li><span class="sistema-selo">${esc(f.fonte)}</span> <strong>${brl(f.valor_em_risco)} em risco</strong> · ${esc(f.urgencia_dias)} dias<br>${esc(f.descricao)}<br><small>Registro do banco (por quê): ${esc(f.motivo)}</small></li>`).join('');
+    }
+    function estoque(lista) {
+      document.getElementById('estoque').innerHTML = lista.map(v =>
+        `<tr><td>${esc(v.marca)} ${esc(v.modelo)}</td><td>${esc(v.ano_modelo)}</td><td>${esc(CATEGORIA[v.categoria_comercial] || v.categoria_comercial)}</td><td><span class="sistema-selo">${esc(SITUACAO[v.situacao_atual] || v.situacao_atual)}</span></td></tr>`).join('');
+    }
+    async function cenario(c) {
+      document.querySelectorAll('[data-cenario]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cenario === c)));
+      grafico(await api('cenario/' + c));
+      mostrarStatus();
+    }
+    document.querySelectorAll('[data-cenario]').forEach(b => b.addEventListener('click', () => cenario(b.dataset.cenario)));
+    document.getElementById('testar').addEventListener('click', async e => {
+      const botao = e.currentTarget; botao.disabled = true;
+      const lista = await api('testar-regras');
+      document.getElementById('resultado-testes').innerHTML = lista.map(t => `
+        <article class="sistema-card">
+          <h3>${esc(t.teste)}</h3>
+          <p class="${t.recusado ? 'sistema-ok' : 'sistema-falha'}">${t.recusado ? 'Recusado pelo banco, como esperado' : 'Aceito: a regra falhou'}</p>
+          <p><code>${esc(t.codigo)}</code> ${t.restricao ? '<code>' + esc(t.restricao) + '</code>' : ''}<br>${esc(t.mensagem)}</p>
+        </article>`).join('');
+      botao.disabled = false; mostrarStatus();
+    });
+    (async () => {
+      const [saude, p, s, f, est, prev] = await Promise.all(['saude', 'propostas', 'simulacoes', 'fila', 'estoque', 'previsao'].map(api));
+      propostas(p); simulacoes(s); fila(f); estoque(est); camadas(prev);
+      await cenario('BASE');
+      document.getElementById('referencia').textContent = 'Data de referência da massa de testes: ' +
+        new Date(saude.data_referencia + 'T12:00:00').toLocaleDateString('pt-BR') + '. Dados fictícios para fins acadêmicos.';
+      mostrarStatus();
+    })();
+  </script>
+
+
+    <!-- RODAPÉ COMPLETO -->
+  <footer class="rodape-site">
+    <div class="rodape-conteiner">
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Multiplikar Automóveis</h3>
+        <p>Comércio especializado de veículos novos, seminovos e usados no bairro Vila São Geraldo.</p>
+        <address>
+          R. Goiapi, 160 - Vila São Geraldo, São Paulo - SP, 03609-010 <br>
+          Telefone: <a href="tel:+551126474000">(11) 2647-4000</a> <br>
+          E-mail: <a href="mailto:multiplikar.oficial@gmail.com">multiplikar.oficial@gmail.com</a>
+        </address>
+        <p class="rodape-horario">
+          <strong>Horário de atendimento</strong><br>
+          Segunda a sexta: 8h30 às 18h<br>
+          Sábado: 8h30 às 13h<br>
+          Domingo e feriados: fechado
+        </p>
+        <div class="rodape-redes">
+          <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/multiplikar.oficial/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Localização</h3>
+        <iframe
+          src="https://maps.google.com/maps?q=R.%20Goiapi,%20160%20-%20Vila%20Sao%20Geraldo,%20S%C3%A3o%20Paulo%20-%20SP,%2003609-010&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          height="220"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de localização da loja Multiplikar Automóveis">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <div class="rodape-creditos">
+        <p>Projeto acadêmico de Desenvolvimento Frontend para Web — Integrantes: Andrey Azevedo Veloso e Brenno Lima do Vale.</p>
+        <p>&copy; 2026 Multiplikar Automóveis. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FIXO DO WHATSAPP -->
+  <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante" aria-label="Fale conosco pelo WhatsApp (abre em nova aba)">
+    <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+    </svg>
+    <span>Fale conosco</span>
+  </a>
+
+  <script src="../assets/js/tema.js" defer></script>
+  <script src="../assets/js/menu.js" defer></script>
+</body>
+</html>

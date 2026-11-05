@@ -4,28 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multiplikar Automóveis — Compra de Veículos de Clientes</title>
+  <link rel="stylesheet" href="../assets/css/design-system.css">
 </head>
 <body>
 
-  <header>
-    <p><strong>Multiplikar Automóveis</strong> | Vila São Geraldo</p>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="estoque.html">Estoque</a></li>
-        <li><a href="compra-veiculos.html">Compra de Veículos</a></li>
-        <li><a href="consignacao.html">Consignação</a></li>
-        <li><a href="avaliacao.html">Avaliação e Laudo Cautelar</a></li>
-        <li><a href="vendas.html">Vendas e Pagamentos</a></li>
-        <li><a href="financiamento.html">Financiamento</a></li>
-        <li><a href="garantia.html">Garantia e Pós-Venda</a></li>
-        <li><a href="orcamento.html">Orçamento</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+    <!-- BARRA DE TOPO INSTITUCIONAL -->
+  <div class="cabecalho-barra-topo">
+    <span>Multiplikar Automóveis &bull; Vila São Geraldo &bull; Atendimento: (11) 2647-4000</span>
+  </div>
+
+  <!-- CABEÇALHO COM NAVEGAÇÃO STICKY E MOBILE-FIRST -->
+  <header class="cabecalho-site">
+    <div class="cabecalho-conteiner">
+      <a href="../index.html" class="marca-link">
+        <img src="../assets/img/logo-loja.jpg" alt="Logotipo da empresa Multiplikar Automóveis" class="marca-logo-img" width="200" height="100">
+      </a>
+
+      <button type="button" class="controle-tema" data-controle-tema aria-label="Ativar tema escuro" aria-pressed="false"><span aria-hidden="true">&#9790;</span><span data-rotulo-tema>Modo escuro</span></button>
+
+      <!-- Controle de Abertura do Menu no Smartphone -->
+      <button type="button" class="menu-toggle-label" data-menu-toggle aria-label="Abrir menu principal" aria-expanded="false" aria-controls="menu-principal">
+        <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+
+      <!-- Navegação Principal -->
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="lista-nav">
+          <li class="item-nav"><a href="../index.html" class="link-nav">Início</a></li>
+          <li class="item-nav">
+            <a href="estoque.html" class="link-nav">Estoque</a>
+            <ul class="submenu-nav" aria-label="Submenu Estoque">
+              <li><a href="estoque.html" class="link-nav">Todos os Veículos</a></li>
+              <li><a href="vendas.html" class="link-nav">Vendas e Pagamentos</a></li>
+            </ul>
+          </li>
+          <li class="item-nav"><a href="compra-veiculos.html" class="link-nav">Compramos Seu Carro</a></li>
+          <li class="item-nav"><a href="consignacao.html" class="link-nav">Consignação</a></li>
+          <li class="item-nav"><a href="avaliacao.html" class="link-nav">Laudo Cautelar</a></li>
+          <li class="item-nav"><a href="financiamento.html" class="link-nav">Financiamento</a></li>
+          <li class="item-nav"><a href="garantia.html" class="link-nav">Garantia</a></li>
+          <li class="item-nav"><a href="contato.html" class="link-nav">Contato</a></li>
+          <li class="item-nav">
+            <a href="orcamento.html" class="btn btn-destaque">Solicitar Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="conteiner-principal">
     <article>
       <h1>Compra de Veículos de Clientes — Multiplikar Automóveis</h1>
       <p>Entenda como a Multiplikar Automóveis compra veículos diretamente de pessoas físicas de forma transparente, segura e sem burocracia.</p>
@@ -96,7 +125,8 @@
       <h2>Aprovação ou Reprovação do Veículo</h2>
       <p>Ao término de todas as análises, o veículo é classificado em uma das seguintes categorias:</p>
 
-      <table border="1">
+      <div class="tabela-rolagem">
+      <table class="tabela-grade">
         <caption>Critérios de Decisão para Compra de Veículos de Clientes</caption>
         <thead>
           <tr>
@@ -123,6 +153,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </section>
 
     <section>
@@ -132,26 +163,69 @@
     </section>
   </main>
 
-  <footer>
-    <section aria-labelledby="rodape-contato">
-      <h2 id="rodape-contato">Contato</h2>
-      <address>
-        R. Goiapi, 160 - Vila Sao Geraldo, São Paulo - SP, 03609-010 <br>
-        Telefone: <a href="tel:+551126474000">(11) 2647-4000</a>
-        <br>
-        E-mail: <a href="mailto:multiplikar.oficial@gmail.com">multiplikar.oficial@gmail.com</a>
-        <br>
-        <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <br>
-        <a href="https://www.facebook.com/Multiplikarconcessionaria" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <br>
-        <a href="https://www.instagram.com/multiplikar.oficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      </address>
-    </section>
-    
-    <p>Projeto acadêmico de Desenvolvimento Frontend para Web — Integrantes: Andrey Azevedo Veloso e Brenno Lima do Vale.</p>
-    <p>&copy; 2026 Multiplikar Automóveis. Todos os direitos reservados.</p>
+    <!-- RODAPÉ COMPLETO -->
+  <footer class="rodape-site">
+    <div class="rodape-conteiner">
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Multiplikar Automóveis</h3>
+        <p>Comércio especializado de veículos novos, seminovos e usados no bairro Vila São Geraldo.</p>
+        <address>
+          R. Goiapi, 160 - Vila São Geraldo, São Paulo - SP, 03609-010 <br>
+          Telefone: <a href="tel:+551126474000">(11) 2647-4000</a> <br>
+          E-mail: <a href="mailto:multiplikar.oficial@gmail.com">multiplikar.oficial@gmail.com</a>
+        </address>
+        <p class="rodape-horario">
+          <strong>Horário de atendimento</strong><br>
+          Segunda a sexta: 8h30 às 18h<br>
+          Sábado: 8h30 às 13h<br>
+          Domingo e feriados: fechado
+        </p>
+        <div class="rodape-redes">
+          <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/multiplikar.oficial/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Localização</h3>
+        <iframe
+          src="https://maps.google.com/maps?q=R.%20Goiapi,%20160%20-%20Vila%20Sao%20Geraldo,%20S%C3%A3o%20Paulo%20-%20SP,%2003609-010&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          height="220"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de localização da loja Multiplikar Automóveis">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <div class="rodape-creditos">
+        <p>Projeto acadêmico de Desenvolvimento Frontend para Web — Integrantes: Andrey Azevedo Veloso e Brenno Lima do Vale.</p>
+        <p>&copy; 2026 Multiplikar Automóveis. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- BOTÃO FIXO DO WHATSAPP -->
+  <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante" aria-label="Fale conosco pelo WhatsApp (abre em nova aba)">
+    <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+    </svg>
+    <span>Fale conosco</span>
+  </a>
+
+  <script src="../assets/js/tema.js" defer></script>
+  <script src="../assets/js/menu.js" defer></script>
 </body>
 </html>

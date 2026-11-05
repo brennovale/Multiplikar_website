@@ -1,15 +1,15 @@
-# Multiplikar Automóveis
+# Multiplikar Automóveis — Entrega 2
 
-## Integrantes
+**Disciplina:** Desenvolvimento Frontend para Web — A2, 2026.2  
+**Professor:** Cid Andrade  
+**Integrantes:** Andrey Azevedo Veloso e Brenno Lima do Vale
 
-- Andrey Azevedo Veloso
-- Brenno Lima do Vale
+**Site publicado:** https://multiplikar-web.vercel.app/  
+**Repositório:** https://github.com/brennovale/Multiplikar_website
 
 ## Introdução
 
-A Multiplikar Automóveis é uma organização comercial do setor automotivo que atua na compra, venda, troca, consignação e intermediação financeira de veículos.  
-
-O objetivo do portal desenvolvido é fornecer uma presença digital institucional consistente e acessível, apresentando de maneira clara e transparente o catálogo demonstrativo da loja, os critérios de avaliação técnica e laudo cautelar, os modelos de intermediação em consignação, as condições comerciais de venda e financiamento bancário, os procedimentos de atendimento em garantia pós-venda, além de canais diretos para envio de mensagens e requisição de propostas personalizadas.
+O projeto apresenta a Multiplikar Automóveis, revenda de veículos novos, seminovos e usados localizada na Vila São Geraldo. O site reúne informações sobre compra, venda, troca, consignação, avaliação, financiamento e atendimento pós-venda. Seu objetivo é facilitar a consulta aos serviços e o contato com a loja por meio de páginas interligadas e formulários de atendimento.
 
 ## Sobre a organização
 
@@ -37,38 +37,73 @@ Durante o encontro, o proprietário autorizou expressamente o grupo a desenvolve
 Dados do registro da reunião:
 
 - **Forma de contato:** Reunião presencial;
-- **Data da reunião:** [28/09/2026];
-- **Nome do proprietário entrevistado:** [Regis Umbelino];
+- **Data da reunião:** 28/09/2026;
+- **Nome do proprietário entrevistado:** Regis Umbelino;
 - **Local da reunião:** Multiplikar Automóveis, bairro Vila São Geraldo;
+
 
 ## Desenvolvimento
 
-O desenvolvimento da Entrega 1 seguiu rigorosamente os padrões de desenvolvimento voltados à semântica e boas práticas de estruturação em HTML5 puro:
+A estrutura HTML da Entrega 1 foi ampliada com uma identidade visual compartilhada em CSS e comportamentos em JavaScript. O levantamento da organização orientou a divisão do conteúdo em dez páginas principais, além de um painel demonstrativo de integração com dados.
 
-- **Contato com a empresa e levantamento de informações:** A partir do contato articulado pelo integrante Brenno Lima do Vale com o proprietário, foram mapeadas as rotinas reais da loja no bairro Vila São Geraldo, abrangendo as formas de captação de veículos de pessoas físicas, os procedimentos de custódia em consignação, o funcionamento das avaliações e laudos cautelares, as parcerias financeiras com nove instituições bancárias e as diretrizes de garantia de dois meses em veículos elegíveis.
-- **Organização das páginas:** O conteúdo foi distribuído em exatamente 10 páginas HTML temáticas e autônomas, interligadas por um menu de navegação global padronizado em todas as páginas, permitindo fluxo de navegação fluido e intuitivo para o usuário.
-- **Decisões semânticas:** Em respeito aos princípios do HTML5 e à conformidade com as diretrizes do W3C, foram utilizadas as tags estruturais `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<figcaption>` e `<footer>`. Cada página possui apenas um elemento `<h1>` lógico no topo de seu conteúdo principal, seguido por desdobramentos ordenados em `<h2>` e `<h3>`, sem salto de níveis de hierarquia. Para listas de etapas foram usados elementos `<ol>`, para itens descritivos `<ul>` e `<dl>`, e para dados tabulares foram estruturadas tabelas com `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `<th>` e atributos `scope`.
-- **Estruturação dos formulários:** Nas páginas `contato.html` e `orcamento.html`, foram desenvolvidos formulários funcionais em HTML. Todos os campos foram vinculados individualmente aos seus respectivos rótulos através de `<label for="...">` correspondendo a `id="..."`, organizados em blocos temáticos com `<fieldset>` e `<legend>`. Foram aplicados validadores nativos do HTML5, tais como `required`, `type="email"`, `type="tel"`, `type="number"`, `minlength`, `maxlength`, `autocomplete` e expressões regulares específicas via atributo `pattern` com `title` explicativo para números de telefone e documentos (CPF/CNPJ).
-- **Incorporação de recursos multimídia:** Foram integrados elementos nativos `<audio>` e `<video>` providos do atributo `controls`, com subelementos `<source>` especificando o caminho relativo dos arquivos (organizados nas pastas `assets/audio/` e `assets/video/`) e mensagens de fallback para navegadores incompatíveis, além de imagens contendo descrições detalhadas no atributo `alt`.
-- **Desafios técnicos enfrentados:** O principal desafio residiu na modelagem e integração dos fluxos operacionais e comerciais de uma organização real em uma arquitetura de dez páginas interconectadas. Isso demandou estruturar critérios rigorosos de validação nativa de dados via expressões regulares nos formulários (como formatos de CPF, CNPJ e telefones com DDD), organizar tabelas de dados técnicos e financeiros com acessibilidade adequada para leitores de tela e assegurar uma navegação totalmente consistente e intuitiva em toda a rede de links do portal.
+| Página | Conteúdo |
+|---|---|
+| `index.html` | Apresentação da loja, vitrine, serviços, áudio e vídeo |
+| `pages/contato.html` | Canais de atendimento, localização e formulário de contato |
+| `pages/orcamento.html` | Solicitação de proposta para comprar, vender ou trocar |
+| `pages/estoque.html` | Catálogo de veículos e tabela de características |
+| `pages/compra-veiculos.html` | Critérios para aquisição de veículos de clientes |
+| `pages/consignacao.html` | Processo de intermediação e condições de consignação |
+| `pages/avaliacao.html` | Avaliação técnica e análise de laudo cautelar |
+| `pages/vendas.html` | Processo comercial e formas de pagamento |
+| `pages/financiamento.html` | Instituições parceiras e exemplos de financiamento |
+| `pages/garantia.html` | Política informada pela empresa e atendimento pós-venda |
+| `pages/sistema.html` | Painel complementar de integração com o banco de dados |
 
-## Estrutura do site
+As páginas utilizam `header`, `nav`, `main`, `section`, `article` e `footer`, com um título principal por página. As tabelas possuem cabeçalhos e legendas; os formulários associam rótulos aos campos e usam validação nativa com `required`, `pattern` e tipos específicos. Os ícones SVG acompanham a cor do componente. Áudio e vídeo estão armazenados em `assets/`.
 
-O projeto é constituído por exatamente 10 páginas HTML, distribuídas da seguinte forma:
+### Pesquisa de leiaute e identidade visual
 
-1. **`index.html` (Página Inicial):** Apresenta o nome e a localização da Multiplikar Automóveis no bairro Vila São Geraldo, o tempo de atuação, tamanho da equipe, objetivos do portal, apresentação multimídia em áudio e vídeo da loja, síntese dos serviços prestados e chamadas para ação.
-2. **`contato.html` (Contato e Localização):** Informações operacionais de atendimento, localização na Vila São Geraldo e formulário completo de contato com validação nativa em HTML5 (nome, CPF/CNPJ, telefone, e-mail, cidade, estado, assunto, mensagem, preferência de retorno e aceite).
-3. **`orcamento.html` (Solicitação de Orçamento ou Proposta):** Formulário interativo para cotação e negociação de veículos contendo dados cadastrais, finalidade de atendimento (comprar, vender, trocar), veículo de interesse, valor disponível, veículo de entrada, formas de pagamento, preferência de estado do bem e termos de consentimento.
-4. **`estoque.html` (Veículos Disponíveis):** Catálogo demonstrativo contendo aviso de conteúdo estrutural de exemplo, tabela comparativa com especificações completas (marca, modelo, ano, cor, km, combustível, câmbio, preço e situação) e fichas detalhadas em artigos individuais para cada veículo com imagens e links de proposta.
-5. **`compra-veiculos.html` (Compra de Veículos de Clientes):** Explicação detalhada sobre a aquisição de automóveis pertencentes a pessoas físicas, análise de quilometragem, ano, motor, estrutura e documentação, relevância do laudo cautelar e tabela com matriz de aprovação e reprovação para compra direta.
-6. **`consignacao.html` (Veículos em Consignação):** Detalhamento do modelo de intermediação e guarda de veículos, permanência da propriedade vinculada ao cliente até o desfecho da venda, preservação do valor líquido combinado, regras de repasse financeiro e tabela de situações da consignação.
-7. **`avaliacao.html` (Avaliação e Laudo Cautelar):** Descrição das vistorias externa e interna, mecânica do motor, verificação de componentes de transmissão e suspensão, identificação técnica (ano, combustível, câmbio e quilometragem), checagem do laudo cautelar, indicação do avaliador responsável e tabela de pareceres finais.
-8. **`vendas.html` (Processo de Vendas e Formas de Pagamento):** Abordagem sobre o atendimento consultivo, apresentação de veículos, possibilidades de entrada com veículo usado, registro contratual do cliente e funcionário responsável, detalhamento de valores, descontos, entrada, saldo restante e aceitação flexível de modalidades combinadas de pagamento (dinheiro, Pix, cartão e financiamento).
-9. **`financiamento.html` (Financiamento e Instituições Parceiras):** Instruções sobre aquisições financiadas, parâmetros de contrato (valor financiado, parcelas, prazos, aprovação e situação), relação das 9 instituições financeiras parceiras (Itaú, BV, Bradesco, Daycoval, Santander, Banco PAN, C6 Bank, Safra e Volkswagen) e esclarecimento sobre a empresa registrar a aprovação sem controlar os pagamentos individuais das mensalidades.
-10. **`garantia.html` (Garantia e Atendimento Pós-Venda):** Esclarecimentos sobre a cobertura de garantia de dois meses para veículos elegíveis, fluxo de abertura de chamados, perícia realizada por mecânicos qualificados, registro de diagnósticos, histórico de atendimentos e salvaguarda legal de cancelamento da compra e devolução quando aplicável.
+Foram reunidas dez referências do setor automotivo, com registro de fontes, características e medições em [design-system/sites.md](design-system/sites.md). A busca de veículos, a fotografia do estoque, a navegação por serviços e as chamadas para contato orientaram a composição do site. O azul foi adotado para ações e links; o verde destaca contato e negociação. Fontes do sistema reduzem dependências e mantêm a leitura consistente.
+
+O CSS compartilhado está em `assets/css/design-system.css`. Grid organiza a vitrine em uma, duas ou três colunas; Flexbox organiza cabeçalho e componentes. O tema escuro altera as variáveis de cor e salva a preferência com `localStorage`. Os botões de tema e menu respondem ao evento de clique em JavaScript. O menu móvel usa botão nativo, informa seu estado com `aria-expanded` e pode ser aberto por teclado.
+
+Os testes de aparência compararam tema claro e escuro, tamanhos do cabeçalho e disposição dos cards em diferentes larguras. Em telas de até 340 px, a logo usa 52 px de altura para se alinhar ao controle de tema. Tabelas largas usam rolagem interna para preservar a leitura sem ampliar a página. A [revisão responsiva](docs/revisao-responsiva.md) contém o escopo dos testes e capturas.
+
+O [exemplo de componentes](design-system/exemplo.html) reúne menu, destaque, três cards, formulário e rodapé. Os [tokens comentados](design-system/tokens.css) documentam a paleta, tipografia e espaçamentos dessa demonstração.
+
+### Formulários e integração
+
+Contato e orçamento utilizam validação básica do navegador. O JavaScript apresenta o resultado do envio; as funções de `api/` encaminham os dados ao serviço da organização. As configurações de conexão são fornecidas por variáveis de ambiente no servidor. A implementação complementar da API Python e a documentação do banco estão em `servidor/`.
+
+### Uso de inteligência artificial
+
+O modelo informado pelo grupo para o desenvolvimento foi Codex Luna 6, com nível High, utilizado no ambiente Maestri. A IA apoiou a leitura dos materiais da disciplina, a pesquisa de referências, a organização dos documentos e a implementação de CSS e JavaScript. A motivação foi acelerar a comparação de alternativas e a revisão de consistência entre páginas.
+
+As respostas foram conferidas com o briefing, os materiais da disciplina, os valores computados no navegador e os validadores W3C. Valores observados em sites de terceiros são identificados como medições; escolhas próprias da Multiplikar são descritas como decisões do projeto.
+
+Para produzir um resultado equivalente com IA, o processo começa pelo briefing e pelos requisitos da entrega, segue pela pesquisa de sites reais e pela definição dos tokens, e então desenvolve um componente por vez. Cada alteração deve ser confrontada com a referência, validada em HTML/CSS e testada em celular, tablet e desktop antes da publicação.
+
+## Validação e publicação
+
+O site está publicado na Vercel em https://multiplikar-web.vercel.app/. As onze páginas HTML foram validadas, e todas foram revalidadas após a revisão de acessibilidade do menu. O CSS publicado passou no perfil CSS3 + SVG com zero erros; os treze avisos dizem respeito a variáveis CSS e extensões de fornecedor. O [mapa de requisitos](docs/criterios-entrega.md) relaciona os critérios aos arquivos. O [relatório de validação](docs/validacao-w3c.md) apresenta os resultados e os arquivos de evidência.
+
+O domínio próprio escolhido para uma futura aquisição é `multiplikarautomoveis.com.br`, registrado como disponível na consulta apresentada pelo grupo. A pesquisa das alternativas, as capturas e o procedimento de aquisição estão em [domínio e publicação](docs/dominio-e-publicacao.md).
+
+## Estrutura dos arquivos
+
+```text
+index.html
+pages/          Páginas de conteúdo e formulários
+assets/         CSS, JavaScript, imagens, áudio, vídeo e dados
+api/            Funções de integração executadas pela Vercel
+design-system/  Referências, tokens, exemplo e capturas
+docs/           Pesquisa, validação, publicação e evidências
+servidor/       API Python e documentação complementar do banco
+```
+
+Para navegar localmente pelas páginas estáticas, execute `python -m http.server 8000` na pasta do projeto e abra `http://localhost:8000`. Os formulários integrados dependem das funções da Vercel e da API configurada; o servidor estático não executa essas funções.
 
 ## Conclusão
 
-O desenvolvimento da Entrega 1 proporcionou uma compreensão aprofundada da importância primordial do HTML5 semântico como fundação de qualquer solução web. Ao abdicar de camadas de estilo e comportamentos programáticos em JavaScript, tornou-se evidente como elementos bem estruturados, tais como tags de seção, cabeçalhos hierárquicos, tabelas acessíveis e atributos nativos de validação de formulários, são capazes de conferir clareza, usabilidade e alta acessibilidade tanto para usuários convencionais quanto para tecnologias assistivas e mecanismos de busca.
-
-O projeto permitiu exercitar a modelagem de dados comerciais de uma organização real, convertendo rotinas de atendimento, estoque, financiamento e pós-venda em documentos web padronizados, organizados e tecnicamente consistentes.
+A Entrega 2 relaciona os conteúdos de HTML semântico, CSS e JavaScript a uma organização real. O trabalho mostrou a importância de definir componentes compartilhados, conferir informações com a empresa e testar a interface em larguras pequenas. A revisão das tabelas e do cabeçalho evidenciou que um conteúdo correto também precisa de uma apresentação adequada ao espaço disponível. A documentação das referências e dos validadores torna as decisões e os resultados verificáveis.

@@ -1,0 +1,131 @@
+{
+    "data":  "2026-11-05",
+    "projeto":  "Multiplikar Automóveis",
+    "html":  [
+                 {
+                     "valido":  true,
+                     "arquivo":  "pages/compra-veiculos.html"
+                 },
+                 {
+                     "valido":  true,
+                     "arquivo":  "pages/consignacao.html"
+                 },
+                 {
+                     "valido":  true,
+                     "arquivo":  "pages/avaliacao.html"
+                 },
+                 {
+                     "valido":  true,
+                     "arquivo":  "pages/financiamento.html"
+                 },
+                 {
+                     "valido":  true,
+                     "arquivo":  "pages/vendas.html"
+                 }
+             ],
+    "css":  {
+                "uri":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                "checkedby":  "http://www.w3.org/2005/07/css-validator",
+                "csslevel":  "css3",
+                "date":  "2026-11-05T10:28:42Z",
+                "timestamp":  "1793917722478",
+                "validity":  true,
+                "result":  {
+                               "errorcount":  0,
+                               "warningcount":  13
+                           },
+                "warnings":  [
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  110,
+                                     "message":  "“-webkit-font-smoothing” is a vendor extension",
+                                     "type":  "vendor-extension",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  188,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  240,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  367,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  544,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  623,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  633,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  763,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  779,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  784,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  1067,
+                                     "message":  "“-webkit-overflow-scrolling” is a vendor extension",
+                                     "type":  "vendor-extension",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  1129,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 },
+                                 {
+                                     "source":  "https://multiplikar-web.vercel.app/assets/css/design-system.css",
+                                     "line":  1138,
+                                     "message":  "Due to their dynamic nature, CSS variables are currently not statically checked",
+                                     "type":  "css-variable",
+                                     "level":  0
+                                 }
+                             ]
+            }
+}

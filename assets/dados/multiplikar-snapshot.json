@@ -1,0 +1,861 @@
+{
+ "gerado_em": "2026-10-31T21:16:44.048435+00:00",
+ "rotas": {
+  "saude": {
+   "data_referencia": "2026-02-10",
+   "agora": "2026-10-31T18:16:43.994083-03:00"
+  },
+  "estoque": [
+   {
+    "id_veiculo": 1,
+    "marca": "Fiat",
+    "modelo": "Argo",
+    "ano_modelo": 2022,
+    "cor": "Branco",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "VENDIDO"
+   },
+   {
+    "id_veiculo": 2,
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano_modelo": 2021,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "VENDIDO"
+   },
+   {
+    "id_veiculo": 3,
+    "marca": "Honda",
+    "modelo": "City",
+    "ano_modelo": 2023,
+    "cor": "Cinza",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "VENDIDO"
+   },
+   {
+    "id_veiculo": 4,
+    "marca": "Hyundai",
+    "modelo": "HB20",
+    "ano_modelo": 2022,
+    "cor": "Azul",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "VENDIDO"
+   },
+   {
+    "id_veiculo": 5,
+    "marca": "Chevrolet",
+    "modelo": "Tracker",
+    "ano_modelo": 2023,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "EM_FORMALIZACAO"
+   },
+   {
+    "id_veiculo": 6,
+    "marca": "Fiat",
+    "modelo": "Uno",
+    "ano_modelo": 2015,
+    "cor": "Branco",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 7,
+    "marca": "Ford",
+    "modelo": "Ka",
+    "ano_modelo": 2013,
+    "cor": "Vermelho",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 8,
+    "marca": "Volkswagen",
+    "modelo": "Gol",
+    "ano_modelo": 2017,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "FORA_DO_ESTOQUE"
+   },
+   {
+    "id_veiculo": 9,
+    "marca": "Renault",
+    "modelo": "Kwid",
+    "ano_modelo": 2024,
+    "cor": "Branco",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 11,
+    "marca": "Volkswagen",
+    "modelo": "Gol",
+    "ano_modelo": 2018,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "FORA_DO_ESTOQUE"
+   },
+   {
+    "id_veiculo": 12,
+    "marca": "Renault",
+    "modelo": "Kwid Zen",
+    "ano_modelo": 2026,
+    "cor": "Cinza",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 13,
+    "marca": "Volkswagen",
+    "modelo": "Tera High 1.0 TSI",
+    "ano_modelo": 2026,
+    "cor": "Prata",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 14,
+    "marca": "Fiat",
+    "modelo": "Argo Drive 1.0",
+    "ano_modelo": 2026,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 15,
+    "marca": "Chevrolet",
+    "modelo": "Onix Plus Premier 1.0 Turbo",
+    "ano_modelo": 2025,
+    "cor": "Prata",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 16,
+    "marca": "Hyundai",
+    "modelo": "Creta Comfort 1.0 Turbo",
+    "ano_modelo": 2025,
+    "cor": "Branco",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 17,
+    "marca": "Jeep",
+    "modelo": "Compass Longitude T270",
+    "ano_modelo": 2025,
+    "cor": "Azul",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 18,
+    "marca": "Chevrolet",
+    "modelo": "Equinox Premier",
+    "ano_modelo": 2024,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 19,
+    "marca": "Nissan",
+    "modelo": "Frontier Pro-4X",
+    "ano_modelo": 2024,
+    "cor": "Cinza",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 20,
+    "marca": "Chevrolet",
+    "modelo": "Onix LTZ 1.0 Turbo",
+    "ano_modelo": 2024,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 21,
+    "marca": "Chevrolet",
+    "modelo": "Onix Plus Premier 1.0 Turbo",
+    "ano_modelo": 2023,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 22,
+    "marca": "Toyota",
+    "modelo": "Corolla GLi",
+    "ano_modelo": 2023,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 23,
+    "marca": "Toyota",
+    "modelo": "Corolla Cross XRX Hybrid",
+    "ano_modelo": 2023,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 24,
+    "marca": "Volkswagen",
+    "modelo": "T-Cross Sense TSI",
+    "ano_modelo": 2021,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 25,
+    "marca": "Jeep",
+    "modelo": "Compass Longitude Diesel",
+    "ano_modelo": 2021,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 26,
+    "marca": "Fiat",
+    "modelo": "Toro Freedom Turbo Diesel",
+    "ano_modelo": 2019,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 27,
+    "marca": "Ford",
+    "modelo": "Ka Sedan SE 1.5",
+    "ano_modelo": 2018,
+    "cor": "Branco",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 28,
+    "marca": "Mercedes-Benz",
+    "modelo": "C 180",
+    "ano_modelo": 2015,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 29,
+    "marca": "Toyota",
+    "modelo": "Corolla XEi 2.0",
+    "ano_modelo": 2015,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 30,
+    "marca": "Ford",
+    "modelo": "Fiesta Sedan 1.6",
+    "ano_modelo": 2014,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 31,
+    "marca": "Honda",
+    "modelo": "Civic LXR",
+    "ano_modelo": 2014,
+    "cor": "Cinza",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 32,
+    "marca": "Volkswagen",
+    "modelo": "Tiguan 2.0 TSI",
+    "ano_modelo": 2014,
+    "cor": "Branco",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 33,
+    "marca": "Chevrolet",
+    "modelo": "Agile LTZ",
+    "ano_modelo": 2013,
+    "cor": "Vermelho",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 34,
+    "marca": "Fiat",
+    "modelo": "Idea Attractive 1.4",
+    "ano_modelo": 2013,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 35,
+    "marca": "Fiat",
+    "modelo": "500 Cult Dualogic",
+    "ano_modelo": 2013,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 36,
+    "marca": "Dodge",
+    "modelo": "Journey R/T",
+    "ano_modelo": 2012,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 37,
+    "marca": "Renault",
+    "modelo": "Sandero Expression 1.6",
+    "ano_modelo": 2011,
+    "cor": "Vermelho",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 38,
+    "marca": "Volkswagen",
+    "modelo": "Polo 1.6",
+    "ano_modelo": 2010,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "DISPONIVEL"
+   },
+   {
+    "id_veiculo": 40,
+    "marca": "Chevrolet",
+    "modelo": "Celta 1.0",
+    "ano_modelo": 2008,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "FORA_DO_ESTOQUE"
+   },
+   {
+    "id_veiculo": 41,
+    "marca": "Peugeot",
+    "modelo": "206 1.4",
+    "ano_modelo": 2009,
+    "cor": "Azul",
+    "categoria_comercial": "USADO",
+    "situacao_atual": "FORA_DO_ESTOQUE"
+   }
+  ],
+  "propostas": [
+   {
+    "rotulo": "A",
+    "situacao": "APRESENTADA",
+    "valor_total": 55000.0,
+    "caixa_d0": 55000.0,
+    "caixa_posterior": 0.0,
+    "valor_em_troca": 0.0,
+    "margem_estimada": 5000.0,
+    "retorno_banco": 0.0,
+    "margem_com_retorno": 5000.0
+   },
+   {
+    "rotulo": "B",
+    "situacao": "APRESENTADA",
+    "valor_total": 55000.0,
+    "caixa_d0": 11000.0,
+    "caixa_posterior": 45760.0,
+    "valor_em_troca": 0.0,
+    "margem_estimada": 5000.0,
+    "retorno_banco": 1760.0,
+    "margem_com_retorno": 6760.0
+   },
+   {
+    "rotulo": "C",
+    "situacao": "APRESENTADA",
+    "valor_total": 55000.0,
+    "caixa_d0": 25000.0,
+    "caixa_posterior": 0.0,
+    "valor_em_troca": 30000.0,
+    "margem_estimada": 5000.0,
+    "retorno_banco": 0.0,
+    "margem_com_retorno": 5000.0
+   }
+  ],
+  "simulacoes": [
+   {
+    "id_simulacao": 1,
+    "tabela_retorno": "R0",
+    "taxa_cliente_mensal": 0.0189,
+    "parcela_calculada": 1402.56,
+    "custo_total_cliente": 67322.88,
+    "cet_aproximado_anual": 0.251926,
+    "retorno_loja": 0.0
+   },
+   {
+    "id_simulacao": 2,
+    "tabela_retorno": "R4",
+    "taxa_cliente_mensal": 0.0219,
+    "parcela_calculada": 1490.5,
+    "custo_total_cliente": 71544.0,
+    "cet_aproximado_anual": 0.296883,
+    "retorno_loja": 1760.0
+   }
+  ],
+  "previsao": [
+   {
+    "semana": "2026-02-09",
+    "realizado": 0.0,
+    "obrigacoes": 6000.0,
+    "funil_ponderado": -1950.0,
+    "saldo_projetado": 29050.0
+   },
+   {
+    "semana": "2026-02-16",
+    "realizado": 0.0,
+    "obrigacoes": 0.0,
+    "funil_ponderado": 0.0,
+    "saldo_projetado": 29050.0
+   },
+   {
+    "semana": "2026-02-23",
+    "realizado": 0.0,
+    "obrigacoes": 0.0,
+    "funil_ponderado": 9914.67,
+    "saldo_projetado": 38964.67
+   },
+   {
+    "semana": "2026-03-02",
+    "realizado": 0.0,
+    "obrigacoes": 0.0,
+    "funil_ponderado": -10833.33,
+    "saldo_projetado": 28131.34
+   }
+  ],
+  "fila": [
+   {
+    "fonte": "CAIXA",
+    "id_referencia": 1,
+    "descricao": "Obrigacao 1 (venda 6, FINANCIAMENTO): receber de 80000.00 vencido desde 2026-01-25 (16 dias de atraso)",
+    "motivo": "obrigacao_financeira: situacao=ATRASADA, vencimento_original=2026-01-25, vencimento_atual=2026-01-25 (parametro_prazo do banco Banco Demonstracao = 15 dias); hoje=2026-02-10",
+    "valor_em_risco": 80000.0,
+    "urgencia_dias": 16
+   },
+   {
+    "fonte": "CRM",
+    "id_referencia": 7,
+    "descricao": "Lead Joao Comprador (atendimento 7) quente sem contato ha 7 dias",
+    "motivo": "classificacao QUENTE (pontuacao 55.00, regra REGRA-V1, revisada por funcionario 1) sem novo contato desde 2026-02-03 09:00:00; limite para QUENTE = 3 dias; valor em risco = proposta 3, maior valor entre 3 alternativa(s) aberta(s) e valida(s) (55000.00)",
+    "valor_em_risco": 55000.0,
+    "urgencia_dias": 7
+   },
+   {
+    "fonte": "ESTOQUE",
+    "id_referencia": 6,
+    "descricao": "Veiculo Fiat Uno (entrada 6) parado ha 35 dias, capital de 25000.00 mais 0 em despesas",
+    "motivo": "entrada ativa sem venda nem proposta aberta associada desde 2026-01-06 11:00:00; despesas acumuladas desde a entrada = 0; limite hipotese de \"parado\" = 30 dias",
+    "valor_em_risco": 25000.0,
+    "urgencia_dias": 35
+   },
+   {
+    "fonte": "ESTOQUE",
+    "id_referencia": 7,
+    "descricao": "Veiculo Ford Ka (entrada 7) parado ha 35 dias, capital de 15000.00 mais 0 em despesas",
+    "motivo": "entrada ativa sem venda nem proposta aberta associada desde 2026-01-06 11:00:00; despesas acumuladas desde a entrada = 0; limite hipotese de \"parado\" = 30 dias",
+    "valor_em_risco": 15000.0,
+    "urgencia_dias": 35
+   }
+  ],
+  "disponiveis": [
+   {
+    "id_veiculo": 33,
+    "marca": "Chevrolet",
+    "modelo": "Agile LTZ",
+    "ano_modelo": 2013,
+    "cor": "Vermelho",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 35900.0
+   },
+   {
+    "id_veiculo": 18,
+    "marca": "Chevrolet",
+    "modelo": "Equinox Premier",
+    "ano_modelo": 2024,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 145900.0
+   },
+   {
+    "id_veiculo": 20,
+    "marca": "Chevrolet",
+    "modelo": "Onix LTZ 1.0 Turbo",
+    "ano_modelo": 2024,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 89900.0
+   },
+   {
+    "id_veiculo": 15,
+    "marca": "Chevrolet",
+    "modelo": "Onix Plus Premier 1.0 Turbo",
+    "ano_modelo": 2025,
+    "cor": "Prata",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 99900.0
+   },
+   {
+    "id_veiculo": 21,
+    "marca": "Chevrolet",
+    "modelo": "Onix Plus Premier 1.0 Turbo",
+    "ano_modelo": 2023,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 77900.0
+   },
+   {
+    "id_veiculo": 36,
+    "marca": "Dodge",
+    "modelo": "Journey R/T",
+    "ano_modelo": 2012,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 55900.0
+   },
+   {
+    "id_veiculo": 35,
+    "marca": "Fiat",
+    "modelo": "500 Cult Dualogic",
+    "ano_modelo": 2013,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 45900.0
+   },
+   {
+    "id_veiculo": 14,
+    "marca": "Fiat",
+    "modelo": "Argo Drive 1.0",
+    "ano_modelo": 2026,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 75900.0
+   },
+   {
+    "id_veiculo": 34,
+    "marca": "Fiat",
+    "modelo": "Idea Attractive 1.4",
+    "ano_modelo": 2013,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 39900.0
+   },
+   {
+    "id_veiculo": 26,
+    "marca": "Fiat",
+    "modelo": "Toro Freedom Turbo Diesel",
+    "ano_modelo": 2019,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 102900.0
+   },
+   {
+    "id_veiculo": 6,
+    "marca": "Fiat",
+    "modelo": "Uno",
+    "ano_modelo": 2015,
+    "cor": "Branco",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 30000.0
+   },
+   {
+    "id_veiculo": 30,
+    "marca": "Ford",
+    "modelo": "Fiesta Sedan 1.6",
+    "ano_modelo": 2014,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 40900.0
+   },
+   {
+    "id_veiculo": 7,
+    "marca": "Ford",
+    "modelo": "Ka",
+    "ano_modelo": 2013,
+    "cor": "Vermelho",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 20000.0
+   },
+   {
+    "id_veiculo": 27,
+    "marca": "Ford",
+    "modelo": "Ka Sedan SE 1.5",
+    "ano_modelo": 2018,
+    "cor": "Branco",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 45900.0
+   },
+   {
+    "id_veiculo": 31,
+    "marca": "Honda",
+    "modelo": "Civic LXR",
+    "ano_modelo": 2014,
+    "cor": "Cinza",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 69900.0
+   },
+   {
+    "id_veiculo": 16,
+    "marca": "Hyundai",
+    "modelo": "Creta Comfort 1.0 Turbo",
+    "ano_modelo": 2025,
+    "cor": "Branco",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 135900.0
+   },
+   {
+    "id_veiculo": 25,
+    "marca": "Jeep",
+    "modelo": "Compass Longitude Diesel",
+    "ano_modelo": 2021,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 109000.0
+   },
+   {
+    "id_veiculo": 17,
+    "marca": "Jeep",
+    "modelo": "Compass Longitude T270",
+    "ano_modelo": 2025,
+    "cor": "Azul",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 141900.0
+   },
+   {
+    "id_veiculo": 28,
+    "marca": "Mercedes-Benz",
+    "modelo": "C 180",
+    "ano_modelo": 2015,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 102900.0
+   },
+   {
+    "id_veiculo": 19,
+    "marca": "Nissan",
+    "modelo": "Frontier Pro-4X",
+    "ano_modelo": 2024,
+    "cor": "Cinza",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 225900.0
+   },
+   {
+    "id_veiculo": 9,
+    "marca": "Renault",
+    "modelo": "Kwid",
+    "ano_modelo": 2024,
+    "cor": "Branco",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 55000.0
+   },
+   {
+    "id_veiculo": 12,
+    "marca": "Renault",
+    "modelo": "Kwid Zen",
+    "ano_modelo": 2026,
+    "cor": "Cinza",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 61900.0
+   },
+   {
+    "id_veiculo": 37,
+    "marca": "Renault",
+    "modelo": "Sandero Expression 1.6",
+    "ano_modelo": 2011,
+    "cor": "Vermelho",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 25900.0
+   },
+   {
+    "id_veiculo": 23,
+    "marca": "Toyota",
+    "modelo": "Corolla Cross XRX Hybrid",
+    "ano_modelo": 2023,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 149900.0
+   },
+   {
+    "id_veiculo": 22,
+    "marca": "Toyota",
+    "modelo": "Corolla GLi",
+    "ano_modelo": 2023,
+    "cor": "Preto",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 119900.0
+   },
+   {
+    "id_veiculo": 29,
+    "marca": "Toyota",
+    "modelo": "Corolla XEi 2.0",
+    "ano_modelo": 2015,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 86900.0
+   },
+   {
+    "id_veiculo": 38,
+    "marca": "Volkswagen",
+    "modelo": "Polo 1.6",
+    "ano_modelo": 2010,
+    "cor": "Preto",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 39900.0
+   },
+   {
+    "id_veiculo": 24,
+    "marca": "Volkswagen",
+    "modelo": "T-Cross Sense TSI",
+    "ano_modelo": 2021,
+    "cor": "Prata",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 89900.0
+   },
+   {
+    "id_veiculo": 13,
+    "marca": "Volkswagen",
+    "modelo": "Tera High 1.0 TSI",
+    "ano_modelo": 2026,
+    "cor": "Prata",
+    "categoria_comercial": "SEMINOVO",
+    "preco_anunciado": 149900.0
+   },
+   {
+    "id_veiculo": 32,
+    "marca": "Volkswagen",
+    "modelo": "Tiguan 2.0 TSI",
+    "ano_modelo": 2014,
+    "cor": "Branco",
+    "categoria_comercial": "USADO",
+    "preco_anunciado": 64900.0
+   }
+  ],
+  "cenario/BASE": [
+   {
+    "semana": "2026-02-09",
+    "saldo_projetado": 29050.0
+   },
+   {
+    "semana": "2026-02-16",
+    "saldo_projetado": 29050.0
+   },
+   {
+    "semana": "2026-02-23",
+    "saldo_projetado": 38964.67
+   },
+   {
+    "semana": "2026-03-02",
+    "saldo_projetado": 28131.34
+   }
+  ],
+  "cenario/BANCO_ATRA_15_DIAS": [
+   {
+    "semana": "2026-02-09",
+    "saldo_projetado": -50950.0
+   },
+   {
+    "semana": "2026-02-16",
+    "saldo_projetado": -50950.0
+   },
+   {
+    "semana": "2026-02-23",
+    "saldo_projetado": 29050.0
+   },
+   {
+    "semana": "2026-03-02",
+    "saldo_projetado": 29050.0
+   },
+   {
+    "semana": "2026-03-09",
+    "saldo_projetado": 38964.67
+   },
+   {
+    "semana": "2026-03-16",
+    "saldo_projetado": 28131.34
+   }
+  ],
+  "cenario/LEADS_QUENTES_NAO_FECHAM": [
+   {
+    "semana": "2026-02-09",
+    "saldo_projetado": 31000.0
+   }
+  ],
+  "testar-regras": [
+   {
+    "teste": "CPF repetido",
+    "recusado": true,
+    "codigo": "23505",
+    "restricao": "uq_pessoa_documento",
+    "mensagem": "duplicate key value violates unique constraint \"uq_pessoa_documento\""
+   },
+   {
+    "teste": "Apagar venda histórica (RN13)",
+    "recusado": true,
+    "codigo": "P0001",
+    "restricao": null,
+    "mensagem": "Historico de venda deve ser encerrado, nunca apagado"
+   },
+   {
+    "teste": "Situação inválida",
+    "recusado": true,
+    "codigo": "23514",
+    "restricao": "ck_atendimento_situacao",
+    "mensagem": "new row for relation \"atendimento\" violates check constraint \"ck_atendimento_situacao\""
+   },
+   {
+    "teste": "Alterar proposta já apresentada (RN34)",
+    "recusado": true,
+    "codigo": "P0001",
+    "restricao": null,
+    "mensagem": "Proposta apresentada e imutavel; crie nova versao"
+   },
+   {
+    "teste": "Mudar a taxa de simulação em análise (RN38)",
+    "recusado": true,
+    "codigo": "P0001",
+    "restricao": null,
+    "mensagem": "Simulacao em analise so permite alterar situacao, data_resposta e parcela_informada"
+   },
+   {
+    "teste": "Voltar obrigação atrasada para prevista (RN39)",
+    "recusado": true,
+    "codigo": "P0001",
+    "restricao": null,
+    "mensagem": "Transicao de situacao da obrigacao financeira invalida"
+   },
+   {
+    "teste": "Apagar interação do histórico (RN40)",
+    "recusado": true,
+    "codigo": "P0001",
+    "restricao": null,
+    "mensagem": "Registro de interacao e somente insercao; historico nao pode ser alterado ou removido"
+   },
+   {
+    "teste": "Revisar de novo um lead já revisado (RN41)",
+    "recusado": true,
+    "codigo": "P0001",
+    "restricao": null,
+    "mensagem": "Classificacao ja revisada e imutavel"
+   }
+  ]
+ }
+}

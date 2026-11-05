@@ -1,0 +1,46 @@
+[
+  {
+    "arquivo": "index.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/avaliacao.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/compra-veiculos.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/consignacao.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/contato.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/estoque.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/financiamento.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/garantia.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/orcamento.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/sistema.html",
+    "valido": true
+  },
+  {
+    "arquivo": "pages/vendas.html",
+    "valido": true
+  }
+]

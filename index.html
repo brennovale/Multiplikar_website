@@ -1,177 +1,420 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
- <figure>
-        <img src="assets/img/logo-loja.jpg" alt="Logotipo da empresa Multiplikar Automóveis, especializada em comércio de veículos novos, seminovos e usados" width="200" height="100">
-  </figure> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiplikar Automóveis — Página Inicial</title>
+  <title>Multiplikar Automóveis — Veículos Novos, Seminovos e Usados</title>
+  <link rel="stylesheet" href="assets/css/design-system.css">
 </head>
 <body>
 
-  <header>
-    <p><strong>Multiplikar Automóveis</strong> | Vila São Geraldo</p>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="pages/estoque.html">Estoque</a></li>
-        <li><a href="pages/compra-veiculos.html">Compra de Veículos</a></li>
-        <li><a href="pages/consignacao.html">Consignação</a></li>
-        <li><a href="pages/avaliacao.html">Avaliação e Laudo Cautelar</a></li>
-        <li><a href="pages/vendas.html">Vendas e Pagamentos</a></li>
-        <li><a href="pages/financiamento.html">Financiamento</a></li>
-        <li><a href="pages/garantia.html">Garantia e Pós-Venda</a></li>
-        <li><a href="pages/orcamento.html">Orçamento</a></li>
-        <li><a href="pages/contato.html">Contato</a></li>
-      </ul>
-    </nav>
+  <!-- BARRA DE TOPO INSTITUCIONAL -->
+  <div class="cabecalho-barra-topo">
+    <span>Multiplikar Automóveis &bull; Vila São Geraldo &bull; Atendimento: (11) 2647-4000</span>
+  </div>
+
+  <!-- CABEÇALHO COM NAVEGAÇÃO STICKY E MOBILE-FIRST -->
+  <header class="cabecalho-site">
+    <div class="cabecalho-conteiner">
+      <a href="index.html" class="marca-link">
+        <img src="assets/img/logo-loja.jpg" alt="Logotipo da empresa Multiplikar Automóveis" class="marca-logo-img" width="200" height="100">
+      </a>
+
+      <button type="button" class="controle-tema" data-controle-tema aria-label="Ativar tema escuro" aria-pressed="false"><span aria-hidden="true">&#9790;</span><span data-rotulo-tema>Modo escuro</span></button>
+
+      <!-- Controle acessível da navegação móvel -->
+      <button type="button" class="menu-toggle-label" data-menu-toggle aria-label="Abrir menu principal" aria-expanded="false" aria-controls="menu-principal">
+        <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+
+      <!-- Navegação Principal -->
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="lista-nav">
+          <li class="item-nav"><a href="index.html" class="link-nav">Início</a></li>
+          <li class="item-nav">
+            <a href="pages/estoque.html" class="link-nav">Estoque</a>
+            <ul class="submenu-nav" aria-label="Submenu Estoque">
+              <li><a href="pages/estoque.html" class="link-nav">Todos os Veículos</a></li>
+              <li><a href="pages/vendas.html" class="link-nav">Vendas e Pagamentos</a></li>
+            </ul>
+          </li>
+          <li class="item-nav"><a href="pages/compra-veiculos.html" class="link-nav">Compramos Seu Carro</a></li>
+          <li class="item-nav"><a href="pages/consignacao.html" class="link-nav">Consignação</a></li>
+          <li class="item-nav"><a href="pages/avaliacao.html" class="link-nav">Laudo Cautelar</a></li>
+          <li class="item-nav"><a href="pages/financiamento.html" class="link-nav">Financiamento</a></li>
+          <li class="item-nav"><a href="pages/garantia.html" class="link-nav">Garantia</a></li>
+          <li class="item-nav"><a href="pages/contato.html" class="link-nav">Contato</a></li>
+          <li class="item-nav">
+            <a href="pages/orcamento.html" class="btn btn-destaque">Solicitar Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <article>
-      <h1>Multiplikar Automóveis</h1>
-      <p>Comércio especializado de veículos novos, seminovos e usados no bairro Vila São Geraldo.</p>
-    </article>
+  <main class="conteiner-principal">
 
-    <section>
-      <h2>Sobre a Empresa</h2>
-      <p>A Multiplikar Automóveis é uma empresa do segmento automotivo sediada no bairro Vila São Geraldo. Com aproximadamente dois anos de atuação consolidada no mercado regional e uma equipe composta por cerca de seis funcionários qualificados, a organização dedica-se a prestar serviços comerciais e operacionais com seriedade, dinamismo e transparência.</p>
-      <p>Nossas operações abrangem a comercialização de veículos novos, seminovos e usados, compra direta de veículos de pessoas físicas, intermediação de veículos em regime de consignação, realização de avaliações técnicas criteriosas, conferência e emissão de laudos cautelares, gestão e controle rigoroso de estoque, estruturação de vendas à vista e financiadas, processamento flexível de pagamentos, garantia pós-venda em veículos elegíveis, além de programas de indicações e comissões para parceiros comerciais.</p>
+    <!-- SEÇÃO HERO COM VÍDEO DE FUNDO DA LOJA E CAMADA ESCURA (::after) -->
+    <section class="secao-hero" aria-labelledby="titulo-hero">
+      <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/fachada-loja.jpg" aria-hidden="true">
+        <source src="assets/video/hero-loja.mp4" type="video/mp4">
+      </video>
+      <div class="hero-conteudo">
+        <h1 id="titulo-hero" class="hero-titulo">Multiplikar Automóveis</h1>
+        <p class="hero-subtitulo">Comércio especializado de veículos novos, seminovos e usados no bairro Vila São Geraldo. Transparência, avaliação técnica e condições sob medida.</p>
+        <div class="hero-acoes">
+          <a href="pages/estoque.html" class="btn btn-destaque">
+            <span>Ver Estoque Completo</span>
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+          <a href="pages/orcamento.html" class="btn btn-secundario">
+            <span>Simular Financiamento</span>
+          </a>
+        </div>
+      </div>
+      <button type="button" class="hero-pausa" id="hero-pausa" aria-label="Pausar vídeo de fundo">Pausar vídeo</button>
+    </section>
+
+    <!-- FORMULÁRIO RÁPIDO DE BUSCA DE VEÍCULOS -->
+    <section class="secao-conteudo" aria-labelledby="titulo-busca">
+      <h2 id="titulo-busca" class="titulo-busca">Encontre o Carro Ideal</h2>
+      <form action="pages/estoque.html" method="get">
+        <div class="busca-grid">
+          <div class="grupo-campo">
+            <label for="busca-modelo" class="rotulo-campo">Marca ou Modelo</label>
+            <input type="text" id="busca-modelo" name="q" class="campo-entrada" placeholder="Ex: Corolla, T-Cross, Onix...">
+          </div>
+          <div class="grupo-campo">
+            <label for="busca-cambio" class="rotulo-campo">Tipo de Câmbio</label>
+            <select id="busca-cambio" name="cambio" class="campo-entrada">
+              <option value="">Todos os Câmbios</option>
+              <option value="automatico">Automático</option>
+              <option value="manual">Manual</option>
+            </select>
+          </div>
+          <div class="grupo-campo">
+            <button type="submit" class="btn btn-primario btn-largo">
+              Buscar Veículos
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- VITRINE DE VEÍCULOS EM GRADE RESPONSIVA (1 COLUNA MOBILE, 2 TABLET, 3 DESKTOP) -->
+    <section aria-labelledby="titulo-vitrine">
+      <div class="vitrine-topo">
+        <h2 id="titulo-vitrine" class="vitrine-titulo">Veículos em Destaque</h2>
+        <a href="pages/estoque.html" class="link-nav vitrine-link">Ver todos os modelos &rarr;</a>
+      </div>
+
+      <div class="grade-veiculos">
+        <!-- BANCO:destaques -->
+        <article class="card-veiculo">
+          <div class="card-midia">
+            <img src="assets/img/estoque/volkswagen-tera-high-1-0-tsi-2026.jpg" alt="Volkswagen Tera High 1.0 TSI 2026 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+            <span class="selo-card">Laudo Aprovado</span>
+          </div>
+          <div class="card-corpo">
+            <h3 class="card-titulo">Volkswagen Tera High 1.0 TSI — 2026</h3>
+            <p class="card-detalhes">1.000 km &bull; Prata &bull; Automático &bull; Flex</p>
+            <p class="card-preco">R$ 149.900,00</p>
+            <a href="pages/orcamento.html" class="btn btn-primario card-acao">Solicitar Proposta</a>
+          </div>
+        </article>
+
+        <article class="card-veiculo">
+          <div class="card-midia">
+            <img src="assets/img/estoque/fiat-argo-drive-1-0-2026.jpg" alt="Fiat Argo Drive 1.0 2026 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+            <span class="selo-card">Laudo Aprovado</span>
+          </div>
+          <div class="card-corpo">
+            <h3 class="card-titulo">Fiat Argo Drive 1.0 — 2026</h3>
+            <p class="card-detalhes">38.000 km &bull; Preto &bull; Automático &bull; Flex</p>
+            <p class="card-preco">R$ 75.900,00</p>
+            <a href="pages/orcamento.html" class="btn btn-primario card-acao">Solicitar Proposta</a>
+          </div>
+        </article>
+
+        <article class="card-veiculo">
+          <div class="card-midia">
+            <img src="assets/img/estoque/renault-kwid-zen-2026.jpg" alt="Renault Kwid Zen 2026 cor cinza" class="card-foto" width="800" height="600" loading="lazy">
+            <span class="selo-card">Laudo Aprovado</span>
+          </div>
+          <div class="card-corpo">
+            <h3 class="card-titulo">Renault Kwid Zen — 2026</h3>
+            <p class="card-detalhes">32.678 km &bull; Cinza &bull; Manual &bull; Flex</p>
+            <p class="card-preco">R$ 61.900,00</p>
+            <a href="pages/orcamento.html" class="btn btn-primario card-acao">Solicitar Proposta</a>
+          </div>
+        </article>
+
+        <article class="card-veiculo">
+          <div class="card-midia">
+            <img src="assets/img/estoque/jeep-compass-longitude-t270-2025.jpg" alt="Jeep Compass Longitude T270 2025 cor azul" class="card-foto" width="800" height="600" loading="lazy">
+            <span class="selo-card">Laudo Aprovado</span>
+          </div>
+          <div class="card-corpo">
+            <h3 class="card-titulo">Jeep Compass Longitude T270 — 2025</h3>
+            <p class="card-detalhes">49.900 km &bull; Azul &bull; Automático &bull; Flex</p>
+            <p class="card-preco">R$ 141.900,00</p>
+            <a href="pages/orcamento.html" class="btn btn-primario card-acao">Solicitar Proposta</a>
+          </div>
+        </article>
+
+        <article class="card-veiculo">
+          <div class="card-midia">
+            <img src="assets/img/estoque/hyundai-creta-comfort-1-0-turbo-2025.jpg" alt="Hyundai Creta Comfort 1.0 Turbo 2025 cor branco" class="card-foto" width="800" height="600" loading="lazy">
+            <span class="selo-card">Laudo Aprovado</span>
+          </div>
+          <div class="card-corpo">
+            <h3 class="card-titulo">Hyundai Creta Comfort 1.0 Turbo — 2025</h3>
+            <p class="card-detalhes">27.163 km &bull; Branco &bull; Automático &bull; Flex</p>
+            <p class="card-preco">R$ 135.900,00</p>
+            <a href="pages/orcamento.html" class="btn btn-primario card-acao">Solicitar Proposta</a>
+          </div>
+        </article>
+
+        <article class="card-veiculo">
+          <div class="card-midia">
+            <img src="assets/img/estoque/chevrolet-onix-plus-premier-1-0-turbo-2025.jpg" alt="Chevrolet Onix Plus Premier 1.0 Turbo 2025 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+            <span class="selo-card">Laudo Aprovado</span>
+          </div>
+          <div class="card-corpo">
+            <h3 class="card-titulo">Chevrolet Onix Plus Premier 1.0 Turbo — 2025</h3>
+            <p class="card-detalhes">45.680 km &bull; Prata &bull; Automático &bull; Flex</p>
+            <p class="card-preco">R$ 99.900,00</p>
+            <a href="pages/orcamento.html" class="btn btn-primario card-acao">Solicitar Proposta</a>
+          </div>
+        </article>
+        <!-- /BANCO:destaques -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE A EMPRESA COM IMAGEM DA FACHADA -->
+    <section class="secao-conteudo" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Sobre a Empresa</h2>
+      <p>A <strong>Multiplikar Automóveis</strong> fica na R. Goiapi, 160, na Vila São Geraldo. Somos uma loja de bairro: quem atende é a mesma equipe de seis pessoas que avalia, prepara e entrega o carro.</p>
+      <ul class="sobre-fatos">
+        <li><strong>Cerca de 2 anos de loja</strong> no mesmo endereço, atendendo de segunda a sábado.</li>
+        <li><strong>Carros novos, seminovos e usados</strong>, de hatch popular a picape e SUV. Também compramos seu carro e vendemos em consignação.</li>
+        <li><strong>Laudo cautelar em todo carro do pátio</strong>, com checagem de estrutura, motor, câmbio e histórico antes de ir para a venda.</li>
+      </ul>
+      <p>Você pode pagar à vista, no Pix, no cartão ou financiar com Itaú, BV, Bradesco, Santander, PAN e Safra. Alguns carros saem com garantia de 2 meses para motor e câmbio.</p>
+
       <figure>
-        <img src="assets/img/fachada-loja.jpg" alt="Fachada comercial da loja Multiplikar Automóveis localizada no bairro Vila São Geraldo" width="640" height="360">
-        <figcaption>Instalações da Multiplikar Automóveis no bairro Vila São Geraldo.</figcaption>
+        <img src="assets/img/fachada-loja.jpg" alt="Fachada comercial da loja Multiplikar Automóveis localizada no bairro Vila São Geraldo" width="640" height="360" class="foto-fachada">
+        <figcaption>
+          Instalações da Multiplikar Automóveis no bairro Vila São Geraldo.
+        </figcaption>
       </figure>
     </section>
 
-    <section>
-      <h2>Objetivo Deste Portal</h2>
-      <p>Este ambiente digital tem como finalidade primordial fornecer a clientes, parceiros e fornecedores uma visão detalhada, transparente e acessível de todos os processos operacionais e comerciais da Multiplikar Automóveis. Por meio das páginas disponibilizadas, o usuário tem a possibilidade de:</p>
-      <ul>
-        <li>Consultar a relação de veículos disponíveis e suas características técnicas;</li>
-        <li>Entender as etapas e exigências para venda direta do seu automóvel para a empresa;</li>
-        <li>Conhecer o funcionamento do modelo de consignação para venda assistida;</li>
-        <li>Compreender o processo rigoroso de avaliação técnica e checagem de laudos cautelares;</li>
-        <li>Informar-se acerca das condições comerciais de venda, descontos, entradas e formas de pagamento aceitas;</li>
-        <li>Analisar as opções de financiamento bancário operadas em conjunto com instituições financeiras parceiras;</li>
-        <li>Conferir os termos e procedimentos para solicitação de garantia mecânica e atendimento pós-venda;</li>
-        <li>Encaminhar propostas personalizadas e mensagens de contato por meio de formulários estruturados.</li>
-      </ul>
+    <!-- SEÇÃO MULTIMÍDIA RESPONSIVA -->
+    <section class="secao-conteudo" aria-labelledby="titulo-multimidia">
+      <h2 id="titulo-multimidia">Apresentação Multimídia da Empresa</h2>
+      <p>Conheça um pouco mais sobre a nossa proposta de atendimento e a estrutura da loja através dos registros multimídia institucionais:</p>
+
+      <div class="grid-midia">
+        <article class="card-servico">
+          <h3>Áudio Institucional: Boas-vindas e Apresentação</h3>
+          <p>Ouça uma breve apresentação sonora sobre os valores, história e modo de atendimento da Multiplikar Automóveis:</p>
+          <audio controls class="midia-largura-total">
+            <source src="assets/audio/multiplikar.mp3" type="audio/mpeg">
+            Seu navegador não suporta a reprodução deste arquivo de áudio.
+          </audio>
+        </article>
+
+        <article class="card-servico">
+          <h3>Vídeo Institucional: Estrutura Operacional e Showroom</h3>
+          <p>Assista ao registro da estrutura física da loja, pátio de atendimento e organização dos veículos no bairro Vila São Geraldo:</p>
+          <video controls width="640" height="360" preload="metadata" poster="assets/img/fachada-loja.jpg" class="midia-largura-total">
+            <source src="assets/video/hero-loja.mp4" type="video/mp4">
+            Seu navegador não suporta a exibição deste arquivo de vídeo.
+          </video>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Apresentação Multimídia da Empresa</h2>
-      <p>Conheça um pouco mais sobre a nossa proposta de atendimento e a estrutura da loja no bairro Vila São Geraldo através dos nossos registros multimídia institucionais:</p>
-      
-      <article>
-        <h3>Áudio Institucional: Boas-vindas e Apresentação</h3>
-        <p>Ouça uma breve apresentação sonora sobre os valores, história e modo de atendimento da Multiplikar Automóveis:</p>
-        <audio controls>
-          <source src="assets/audio/multiplikar.mp3" type="audio/mpeg">
-          Seu navegador não possui suporte para a reprodução deste arquivo de áudio. Por favor, utilize um navegador moderno compatível com HTML5.
-        </audio>
-      </article>
-
-      <article>
-        <h3>Vídeo Institucional: Estrutura Operacional e Showroom</h3>
-        <p>Assista ao registro em vídeo da estrutura física da loja, pátio de atendimento e organização dos veículos no bairro Vila São Geraldo:</p>
-        <video controls width="640" height="360">
-          <source src="assets/video/estrutura-multiplikar.mp4" type="video/mp4">
-          Seu navegador não possui suporte para a exibição deste arquivo de vídeo. Por favor, utilize um navegador moderno compatível com HTML5.
-        </video>
-      </article>
-    </section>
-
-    <section>
-      <h2>Resumo dos Principais Serviços</h2>
+    <!-- RESUMO DOS PRINCIPAIS SERVIÇOS EM GRADE MODULAR -->
+    <section class="secao-conteudo" aria-labelledby="titulo-servicos">
+      <h2 id="titulo-servicos">Nossos Serviços Especializados</h2>
       <p>Abaixo apresentamos uma síntese de nossas principais frentes de trabalho. Acesse as páginas dedicadas para obter instruções completas sobre cada modalidade:</p>
 
-      <article>
-        <h3>1. Venda de Veículos Novos, Seminovos e Usados</h3>
-        <p>Disponibilizamos modelos de diversas montadoras, categorias, quilometragens e faixas de preço, com histórico conferido e preparação técnica prévia.</p>
-        <p><a href="pages/estoque.html">Consultar estoque demonstrativo de veículos &rarr;</a></p>
-      </article>
+      <div class="grade-servicos">
+        <article class="card-servico">
+          <h3>1. Venda de Veículos</h3>
+          <p>Modelos com histórico conferido, preparação técnica prévia e laudo cautelar.</p>
+          <p class="card-servico-link"><a href="pages/estoque.html">Consultar estoque &rarr;</a></p>
+        </article>
 
-      <article>
-        <h3>2. Compra de Veículos de Pessoas Físicas</h3>
-        <p>Compramos veículos diretamente de proprietários particulares, mediante análise presencial das condições estruturais, mecânicas e documentais.</p>
-        <p><a href="pages/compra-veiculos.html">Conhecer o processo de compra de veículos &rarr;</a></p>
-      </article>
+        <article class="card-servico">
+          <h3>2. Compra Direta</h3>
+          <p>Compramos veículos de particulares mediante análise presencial rápida e justa.</p>
+          <p class="card-servico-link"><a href="pages/compra-veiculos.html">Vender meu carro &rarr;</a></p>
+        </article>
 
-      <article>
-        <h3>3. Venda em Consignação</h3>
-        <p>Intermediação profissional para quem deseja vender seu veículo com segurança jurídica e ampla divulgação, mantendo a titularidade até a conclusão da venda.</p>
-        <p><a href="pages/consignacao.html">Entender as vantagens e regras da consignação &rarr;</a></p>
-      </article>
+        <article class="card-servico">
+          <h3>3. Consignação</h3>
+          <p>Intermediação segura para vender seu carro sem dor de cabeça e com ampla divulgação.</p>
+          <p class="card-servico-link"><a href="pages/consignacao.html">Como funciona &rarr;</a></p>
+        </article>
 
-      <article>
-        <h3>4. Avaliação Técnica e Laudo Cautelar</h3>
-        <p>Inspeção minuciosa de itens externos, internos, mecânica, suspensão, freios, originalidade de chassi e motor, e histórico de sinistros ou leilões.</p>
-        <p><a href="pages/avaliacao.html">Ver critérios da avaliação técnica e laudo cautelar &rarr;</a></p>
-      </article>
+        <article class="card-servico">
+          <h3>4. Laudo Cautelar</h3>
+          <p>Inspeção minuciosa estrutural, mecânica, elétrica e checagem de histórico.</p>
+          <p class="card-servico-link"><a href="pages/avaliacao.html">Critérios do laudo &rarr;</a></p>
+        </article>
 
-      <article>
-        <h3>5. Vendas Flexíveis e Formas de Pagamento</h3>
-        <p>Negociação transparente com possibilidade de entrada com veículo usado, aceitação de dinheiro, Pix, cartão de débito e crédito, e financiamento, inclusive combinando meios de pagamento.</p>
-        <p><a href="pages/vendas.html">Saiba mais sobre negociações e pagamentos &rarr;</a></p>
-      </article>
+        <article class="card-servico">
+          <h3>5. Vendas Flexíveis</h3>
+          <p>Entrada com usado, Pix, cartões em até 18x e combinação flexível de pagamentos.</p>
+          <p class="card-servico-link"><a href="pages/vendas.html">Formas de pagamento &rarr;</a></p>
+        </article>
 
-      <article>
-        <h3>6. Financiamento com Instituições Parceiras</h3>
-        <p>Encaminhamento ágil de crédito automotivo junto aos principais bancos e financeiras atuantes no país, com suporte em toda a fase cadastral e aprovação.</p>
-        <p><a href="pages/financiamento.html">Consultar instituições parceiras de financiamento &rarr;</a></p>
-      </article>
+        <article class="card-servico">
+          <h3>6. Financiamento</h3>
+          <p>Parceria com Itaú, BV, Bradesco, Santander, PAN e Safra com aprovação ágil.</p>
+          <p class="card-servico-link"><a href="pages/financiamento.html">Ver parceiros &rarr;</a></p>
+        </article>
 
-      <article>
-        <h3>7. Garantia e Atendimento Pós-Venda</h3>
-        <p>Acompanhamento e suporte técnico mecânico para veículos contemplados com garantia contratual de dois meses, com registro de atendimentos e diagnósticos transparentes.</p>
-        <p><a href="pages/garantia.html">Conferir política de garantia e pós-venda &rarr;</a></p>
-      </article>
+        <article class="card-servico">
+          <h3>7. Garantia Pós-Venda</h3>
+          <p>Acompanhamento e suporte técnico mecânico de motor e câmbio.</p>
+          <p class="card-servico-link"><a href="pages/garantia.html">Termos da garantia &rarr;</a></p>
+        </article>
 
-      <article>
-        <h3>8. Indicações e Comissões Comerciais</h3>
-        <p>Valorizamos parcerias locais e clientes satisfeitos por meio de programas estruturados de recompensa e comissionamento por indicações de novos negócios fechados.</p>
-      </article>
+        <article class="card-servico">
+          <h3>8. Indicação Premiada</h3>
+          <p>Comissões atrativas para parceiros que indicam clientes para compra ou venda.</p>
+          <p class="card-servico-link"><a href="pages/contato.html">Saiba mais &rarr;</a></p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Solicite uma Proposta ou Fale Conosco</h2>
-      <p>Precisa comprar, vender, trocar ou financiar um automóvel? Nossa equipe de atendimento está à disposição para auxiliar em cada etapa de sua negociação:</p>
-      <ul>
-        <li>Deseja uma simulação financeira ou proposta de compra e troca? Acesse o formulário em <a href="pages/orcamento.html">Solicitação de Orçamento</a>.</li>
-        <li>Tem alguma dúvida geral, sugestão ou deseja falar com nossa equipe? Envie sua mensagem através da página de <a href="pages/contato.html">Contato e Localização</a>.</li>
-      </ul>
+    <!-- TABELA COMPARATIVA DE ESTOQUE DEMONSTRATIVO -->
+    <section class="secao-conteudo" aria-labelledby="titulo-tabela">
+      <h2 id="titulo-tabela">Tabela Geral do Estoque</h2>
+      <p>Os veículos em destaque, lidos do banco de dados da loja:</p>
+
+      <div class="tabela-rolagem">
+        <table>
+          <caption>Veículos em destaque no banco de dados da loja</caption>
+          <thead>
+            <tr>
+              <th scope="col">Marca</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Cor</th>
+              <th scope="col">Quilometragem</th>
+              <th scope="col">Câmbio</th>
+              <th scope="col">Preço (R$)</th>
+              <th scope="col">Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- BANCO:tabela -->
+            <tr><td>Volkswagen</td><td>Tera High 1.0 TSI</td><td>2026</td><td>Prata</td><td>1.000 km</td><td>Automático</td><td>R$ 149.900,00</td><td>Disponível</td></tr>
+            <tr><td>Fiat</td><td>Argo Drive 1.0</td><td>2026</td><td>Preto</td><td>38.000 km</td><td>Automático</td><td>R$ 75.900,00</td><td>Disponível</td></tr>
+            <tr><td>Renault</td><td>Kwid Zen</td><td>2026</td><td>Cinza</td><td>32.678 km</td><td>Manual</td><td>R$ 61.900,00</td><td>Disponível</td></tr>
+            <tr><td>Jeep</td><td>Compass Longitude T270</td><td>2025</td><td>Azul</td><td>49.900 km</td><td>Automático</td><td>R$ 141.900,00</td><td>Disponível</td></tr>
+            <tr><td>Hyundai</td><td>Creta Comfort 1.0 Turbo</td><td>2025</td><td>Branco</td><td>27.163 km</td><td>Automático</td><td>R$ 135.900,00</td><td>Disponível</td></tr>
+            <tr><td>Chevrolet</td><td>Onix Plus Premier 1.0 Turbo</td><td>2025</td><td>Prata</td><td>45.680 km</td><td>Automático</td><td>R$ 99.900,00</td><td>Disponível</td></tr>
+            <!-- /BANCO:tabela -->
+          </tbody>
+        </table>
+      </div>
     </section>
+
   </main>
 
-  <footer>
-    <section aria-labelledby="rodape-contato">
-      <h2 id="rodape-contato">Contato</h2>
-      <iframe 
-        src="https://maps.google.com/maps?q=R.%20Goiapi,%20160%20-%20Vila%20Sao%20Geraldo,%20S%C3%A3o%20Paulo%20-%20SP,%2003609-010&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-        width="640" 
-        height="360" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <br><br>
-      <address>
-        R. Goiapi, 160 - Vila Sao Geraldo, São Paulo - SP, 03609-010 <br>
-        Telefone: <a href="tel:+551126474000">(11) 2647-4000</a>
-        <br>
-        E-mail: <a href="mailto:multiplikar.oficial@gmail.com">multiplikar.oficial@gmail.com</a>
-        <br>
-        <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <br>
-        <a href="https://www.facebook.com/Multiplikarconcessionaria" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <br>
-        <a href="https://www.instagram.com/multiplikar.oficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      </address>
-    </section>
-    <p>Projeto acadêmico de Desenvolvimento Frontend para Web — Integrantes: Andrey Azevedo Veloso e Brenno Lima do Vale.</p>
-    <p>&copy; 2026 Multiplikar Automóveis. Todos os direitos reservados.</p>
+  <!-- RODAPÉ COMPLETO COM MAPA E CONTATO -->
+  <footer class="rodape-site">
+    <div class="rodape-conteiner">
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Multiplikar Automóveis</h3>
+        <p>Comércio especializado de veículos novos, seminovos e usados no bairro Vila São Geraldo.</p>
+        <address>
+          R. Goiapi, 160 - Vila São Geraldo, São Paulo - SP, 03609-010 <br>
+          Telefone: <a href="tel:+551126474000">(11) 2647-4000</a> <br>
+          E-mail: <a href="mailto:multiplikar.oficial@gmail.com">multiplikar.oficial@gmail.com</a>
+        </address>
+        <p class="rodape-horario">
+          <strong>Horário de atendimento</strong><br>
+          Segunda a sexta: 8h30 às 18h<br>
+          Sábado: 8h30 às 13h<br>
+          Domingo e feriados: fechado
+        </p>
+        <div class="rodape-redes">
+          <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/multiplikar.oficial/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Localização</h3>
+        <iframe
+          src="https://maps.google.com/maps?q=R.%20Goiapi,%20160%20-%20Vila%20Sao%20Geraldo,%20S%C3%A3o%20Paulo%20-%20SP,%2003609-010&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          height="220"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de localização da loja Multiplikar Automóveis">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <div class="rodape-creditos">
+        <p>Projeto acadêmico de Desenvolvimento Frontend para Web — Integrantes: Andrey Azevedo Veloso e Brenno Lima do Vale.</p>
+        <p>&copy; 2026 Multiplikar Automóveis. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- BOTÃO FIXO DO WHATSAPP -->
+  <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante" aria-label="Fale conosco pelo WhatsApp (abre em nova aba)">
+    <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+    </svg>
+    <span>Fale conosco</span>
+  </a>
+
+  <!-- Botão Pausar/Tocar do vídeo de fundo. Com economia de dados, fica só a foto da fachada -->
+  <script>
+    (function () {
+      var video = document.getElementById('hero-video');
+      var botao = document.getElementById('hero-pausa');
+      var economia = navigator.connection && navigator.connection.saveData;
+      if (economia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.pause();
+        if (economia) { video.remove(); botao.remove(); }
+        return;
+      }
+      botao.addEventListener('click', function () {
+        var pausar = !video.paused;
+        pausar ? video.pause() : video.play();
+        botao.textContent = pausar ? 'Tocar vídeo' : 'Pausar vídeo';
+        botao.setAttribute('aria-label', pausar ? 'Tocar vídeo de fundo' : 'Pausar vídeo de fundo');
+      });
+    })();
+  </script>
+
+  <script src="assets/js/tema.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
 </body>
 </html>

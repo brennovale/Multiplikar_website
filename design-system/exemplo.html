@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Multiplikar — exemplo do Design System</title><style>/* Multiplikar: síntese de referências automotivas, adaptada à identidade da loja. */
+:root {
+  --cor-primaria: #0066cc; /* Links e ações: decisão do projeto. */
+  --cor-destaque: #008746; /* Verde da marca com contraste para texto branco. */
+  --cor-texto: #0f172a; /* Texto escuro sobre superfícies claras. */
+  --cor-fundo: #f8fafc; /* Fundo neutro: separa conteúdo e navegação. */
+  --cor-card: #ffffff; /* Cards de estoque: padrão observado no setor. */
+  --cor-borda: #64748b; /* Contornos de campos e componentes. */
+  --fonte-padrao: system-ui, sans-serif; /* Fonte disponível no dispositivo. */
+  --espaco-xs: .5rem;
+  --espaco-s: 1rem;
+  --espaco-m: 1.5rem;
+  --espaco-l: 2rem;
+  --espaco-xl: 3rem;
+  --raio-borda: .5rem;
+  --sombra: 0 2px 8px rgb(15 23 42 / .1);
+}
+/* Equivalências: azul hsl(210,100%,40%); verde hsl(151,100%,26%). */
+.tema-escuro {
+  --cor-primaria: #93c5fd;
+  --cor-destaque: #6ee7b7;
+  --cor-texto: #f8fafc;
+  --cor-fundo: #0f172a;
+  --cor-card: #1e293b;
+  --cor-borda: #94a3b8;
+}
+* {box-sizing:border-box} body {margin:0;font:1rem/1.6 var(--fonte-padrao);color:var(--cor-texto);background:var(--cor-fundo)}
+header,main,footer {max-width:80rem;margin:auto;padding:var(--espaco-s)}
+nav ul {display:flex;flex-direction:column;gap:var(--espaco-xs);list-style:none;padding:0}
+a:link {color:var(--cor-primaria)} a:visited {color:var(--cor-primaria)} a:hover {text-decoration-thickness:2px} a:active {opacity:.8}
+a,button {display:inline-flex;align-items:center;min-height:44px;padding:var(--espaco-xs) var(--espaco-s)}
+:focus-visible {outline:3px solid var(--cor-primaria);outline-offset:3px}
+.destaque {padding:var(--espaco-m);background:var(--cor-card)} h1 {font-size:2rem;line-height:1.3}
+.grade {display:grid;grid-template-columns:1fr;gap:var(--espaco-s);margin-block:var(--espaco-m)}
+article {border:1px solid var(--cor-borda);border-radius:var(--raio-borda);overflow:hidden;background:var(--cor-card)}
+article div {padding:var(--espaco-s)} img {display:block;max-width:100%;width:100%;height:auto} h2 {font-size:1.25rem}
+form {max-width:36rem;padding:var(--espaco-s);background:var(--cor-card)} label,input {display:block;width:100%}
+input {min-height:44px;padding:var(--espaco-xs);font:inherit;border:1px solid var(--cor-borda);border-radius:var(--raio-borda)}
+button {margin-top:var(--espaco-s);font:inherit;cursor:pointer;border:0;border-radius:var(--raio-borda);background:var(--cor-primaria);color:var(--cor-card);transition:transform .15s}
+button:hover {transform:translateY(-2px)}
+@media (min-width:768px) {nav ul {flex-direction:row}.grade {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1280px) {.grade {grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce) {button {transition:none}}
+</style></head>
+<body><header><strong>Multiplikar Automóveis</strong><nav aria-label="Navegação do exemplo"><ul><li><a href="../index.html">Início</a></li><li><a href="../pages/estoque.html">Estoque</a></li><li><a href="../pages/contato.html">Contato</a></li></ul></nav></header>
+<main><section class="destaque"><h1>Encontre seu próximo veículo</h1><p>Componentes e identidade visual do portal Multiplikar Automóveis.</p><a href="../pages/orcamento.html">Solicitar proposta</a></section><section aria-label="Exemplos de cards" class="grade"><article><img src="../assets/img/estoque/volkswagen-tera-high-1-0-tsi-2026.jpg" alt="Volkswagen Tera" width="800" height="600"><div><h2>Volkswagen Tera</h2><p>Exemplo de apresentação de veículo.</p><a href="../pages/estoque.html">Consultar estoque</a></div></article><article><img src="../assets/img/estoque/fiat-argo-drive-1-0-2026.jpg" alt="Fiat Argo" width="800" height="600"><div><h2>Fiat Argo</h2><p>Exemplo de apresentação de veículo.</p><a href="../pages/estoque.html">Consultar estoque</a></div></article><article><img src="../assets/img/estoque/renault-kwid-zen-2026.jpg" alt="Renault Kwid" width="800" height="600"><div><h2>Renault Kwid</h2><p>Exemplo de apresentação de veículo.</p><a href="../pages/estoque.html">Consultar estoque</a></div></article></section>
+<section><h2>Busca de veículos</h2><form action="../pages/estoque.html" method="get"><label for="modelo">Marca ou modelo</label><input id="modelo" name="modelo" type="text" maxlength="80" required><button type="submit">Consultar veículos</button></form></section></main><footer><p>Multiplikar Automóveis · Vila São Geraldo</p></footer></body></html>

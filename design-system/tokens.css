@@ -1,0 +1,26 @@
+/* Multiplikar: síntese de referências automotivas, adaptada à identidade da loja. */
+:root {
+  --cor-primaria: #0066cc; /* Links e ações: decisão do projeto. */
+  --cor-destaque: #008746; /* Verde da marca com contraste para texto branco. */
+  --cor-texto: #0f172a; /* Texto escuro sobre superfícies claras. */
+  --cor-fundo: #f8fafc; /* Fundo neutro: separa conteúdo e navegação. */
+  --cor-card: #ffffff; /* Cards de estoque: padrão observado no setor. */
+  --cor-borda: #64748b; /* Contornos de campos e componentes. */
+  --fonte-padrao: system-ui, sans-serif; /* Fonte disponível no dispositivo. */
+  --espaco-xs: .5rem;
+  --espaco-s: 1rem;
+  --espaco-m: 1.5rem;
+  --espaco-l: 2rem;
+  --espaco-xl: 3rem;
+  --raio-borda: .5rem;
+  --sombra: 0 2px 8px rgb(15 23 42 / .1);
+}
+/* Equivalências: azul hsl(210,100%,40%); verde hsl(151,100%,26%). */
+.tema-escuro {
+  --cor-primaria: #93c5fd;
+  --cor-destaque: #6ee7b7;
+  --cor-texto: #f8fafc;
+  --cor-fundo: #0f172a;
+  --cor-card: #1e293b;
+  --cor-borda: #94a3b8;
+}

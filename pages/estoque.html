@@ -4,28 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multiplikar Automóveis — Estoque de Veículos</title>
+  <link rel="stylesheet" href="../assets/css/design-system.css">
 </head>
 <body>
 
-  <header>
-    <p><strong>Multiplikar Automóveis</strong> | Vila São Geraldo</p>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="estoque.html">Estoque</a></li>
-        <li><a href="compra-veiculos.html">Compra de Veículos</a></li>
-        <li><a href="consignacao.html">Consignação</a></li>
-        <li><a href="avaliacao.html">Avaliação e Laudo Cautelar</a></li>
-        <li><a href="vendas.html">Vendas e Pagamentos</a></li>
-        <li><a href="financiamento.html">Financiamento</a></li>
-        <li><a href="garantia.html">Garantia e Pós-Venda</a></li>
-        <li><a href="orcamento.html">Orçamento</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+    <!-- BARRA DE TOPO INSTITUCIONAL -->
+  <div class="cabecalho-barra-topo">
+    <span>Multiplikar Automóveis &bull; Vila São Geraldo &bull; Atendimento: (11) 2647-4000</span>
+  </div>
+
+  <!-- CABEÇALHO COM NAVEGAÇÃO STICKY E MOBILE-FIRST -->
+  <header class="cabecalho-site">
+    <div class="cabecalho-conteiner">
+      <a href="../index.html" class="marca-link">
+        <img src="../assets/img/logo-loja.jpg" alt="Logotipo da empresa Multiplikar Automóveis" class="marca-logo-img" width="200" height="100">
+      </a>
+
+      <button type="button" class="controle-tema" data-controle-tema aria-label="Ativar tema escuro" aria-pressed="false"><span aria-hidden="true">&#9790;</span><span data-rotulo-tema>Modo escuro</span></button>
+
+      <!-- Controle de Abertura do Menu no Smartphone -->
+      <button type="button" class="menu-toggle-label" data-menu-toggle aria-label="Abrir menu principal" aria-expanded="false" aria-controls="menu-principal">
+        <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+
+      <!-- Navegação Principal -->
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="lista-nav">
+          <li class="item-nav"><a href="../index.html" class="link-nav">Início</a></li>
+          <li class="item-nav">
+            <a href="estoque.html" class="link-nav">Estoque</a>
+            <ul class="submenu-nav" aria-label="Submenu Estoque">
+              <li><a href="estoque.html" class="link-nav">Todos os Veículos</a></li>
+              <li><a href="vendas.html" class="link-nav">Vendas e Pagamentos</a></li>
+            </ul>
+          </li>
+          <li class="item-nav"><a href="compra-veiculos.html" class="link-nav">Compramos Seu Carro</a></li>
+          <li class="item-nav"><a href="consignacao.html" class="link-nav">Consignação</a></li>
+          <li class="item-nav"><a href="avaliacao.html" class="link-nav">Laudo Cautelar</a></li>
+          <li class="item-nav"><a href="financiamento.html" class="link-nav">Financiamento</a></li>
+          <li class="item-nav"><a href="garantia.html" class="link-nav">Garantia</a></li>
+          <li class="item-nav"><a href="contato.html" class="link-nav">Contato</a></li>
+          <li class="item-nav">
+            <a href="orcamento.html" class="btn btn-destaque">Solicitar Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="conteiner-principal">
     <article>
       <h1>Estoque de Veículos — Multiplikar Automóveis</h1>
       <p>Consulte nossa relação de veículos em exposição física e virtual no bairro Vila São Geraldo.</p>
@@ -33,10 +62,11 @@
 
     <section>
       <h2>Tabela Geral do Estoque</h2>
-      <p>Abaixo encontra-se a visão consolidada dos veículos cadastrados para fins de demonstração estrutural:</p>
+      <p>Veículos disponíveis agora no estoque, lidos do banco de dados da loja:</p>
 
-     <table border="1">
-        <caption>Relação comparativa de veículos no estoque demonstrativo</caption>
+     <div class="tabela-rolagem">
+      <table class="tabela-grade">
+        <caption>Veículos com situação disponível no banco de dados da loja</caption>
         <thead>
           <tr>
             <th scope="col">Marca</th>
@@ -51,200 +81,471 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">Chevrolet</th>
-            <td>Onix Plus 1.0 Turbo Premier</td>
-            <td>2024/2025</td>
-            <td>Prata</td>
-            <td>45.500 km</td>
-            <td>Flex</td>
-            <td>Automático</td>
-            <td>89.900,00</td>
-            <td>Disponível</td>
-          </tr>
-          <tr>
-            <th scope="row">Volkswagen</th>
-            <td>T-Cross Sense TSI </td>
-            <td>2021/2021</td>
-            <td>Branco</td>
-            <td>79.200 km</td>
-            <td>Flex</td>
-            <td>Automático</td>
-            <td>89.900,00</td>
-            <td>Disponível</td>
-          </tr>
-          <tr>
-            <th scope="row">Fiat</th>
-            <td>Strada Adventure Cabine Dupla</td>
-            <td>2014/2014</td>
-            <td>Cinza</td>
-            <td>173.000 km</td>
-            <td>Flex</td>
-            <td>Manual</td>
-            <td>58.900,00</td>
-            <td>Disponível</td>
-          </tr>
-          <tr>
-            <th scope="row">Toyota</th>
-            <td>Corolla XEI 2.0</td>
-            <td>2020/2020</td>
-            <td>Cinza Metálico</td>
-            <td>61.000 km</td>
-            <td>Flex</td>
-            <td>Automático (CVT)</td>
-            <td>125.900,00</td>
-            <td>Disponível</td>
-          </tr>
-          <tr>
-            <th scope="row">Renault</th>
-            <td>Kwid 1.0 Zen</td>
-            <td>2025/2026</td>
-            <td>Cinza</td>
-            <td>32.678 km</td>
-            <td>Flex</td>
-            <td>Manual</td>
-            <td>63.900,00</td>
-            <td>Disponível</td>
-          </tr>
+          <!-- BANCO:tabela -->
+          <tr><th scope="row">Volkswagen</th><td>Tera High 1.0 TSI</td><td>2026</td><td>Prata</td><td>1.000 km</td><td>Flex</td><td>Automático</td><td>R$ 149.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Fiat</th><td>Argo Drive 1.0</td><td>2026</td><td>Preto</td><td>38.000 km</td><td>Flex</td><td>Automático</td><td>R$ 75.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Renault</th><td>Kwid Zen</td><td>2026</td><td>Cinza</td><td>32.678 km</td><td>Flex</td><td>Manual</td><td>R$ 61.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Jeep</th><td>Compass Longitude T270</td><td>2025</td><td>Azul</td><td>49.900 km</td><td>Flex</td><td>Automático</td><td>R$ 141.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Hyundai</th><td>Creta Comfort 1.0 Turbo</td><td>2025</td><td>Branco</td><td>27.163 km</td><td>Flex</td><td>Automático</td><td>R$ 135.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Chevrolet</th><td>Onix Plus Premier 1.0 Turbo</td><td>2025</td><td>Prata</td><td>45.680 km</td><td>Flex</td><td>Automático</td><td>R$ 99.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Nissan</th><td>Frontier Pro-4X</td><td>2024</td><td>Cinza</td><td>34.400 km</td><td>Diesel</td><td>Automático</td><td>R$ 225.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Chevrolet</th><td>Equinox Premier</td><td>2024</td><td>Preto</td><td>44.150 km</td><td>Gasolina</td><td>Manual</td><td>R$ 145.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Chevrolet</th><td>Onix LTZ 1.0 Turbo</td><td>2024</td><td>Preto</td><td>15.224 km</td><td>Flex</td><td>Automático</td><td>R$ 89.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Toyota</th><td>Corolla Cross XRX Hybrid</td><td>2023</td><td>Preto</td><td>60.126 km</td><td>Flex</td><td>Automático</td><td>R$ 149.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Toyota</th><td>Corolla GLi</td><td>2023</td><td>Preto</td><td>84.085 km</td><td>Flex</td><td>Automático</td><td>R$ 119.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Chevrolet</th><td>Onix Plus Premier 1.0 Turbo</td><td>2023</td><td>Preto</td><td>28.900 km</td><td>Flex</td><td>Automático</td><td>R$ 77.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Jeep</th><td>Compass Longitude Diesel</td><td>2021</td><td>Preto</td><td>113.485 km</td><td>Diesel</td><td>Automático</td><td>R$ 109.000,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Volkswagen</th><td>T-Cross Sense TSI</td><td>2021</td><td>Prata</td><td>79.275 km</td><td>Flex</td><td>Automático</td><td>R$ 89.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Fiat</th><td>Toro Freedom Turbo Diesel</td><td>2019</td><td>Prata</td><td>107.000 km</td><td>Diesel</td><td>Automático</td><td>R$ 102.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Ford</th><td>Ka Sedan SE 1.5</td><td>2018</td><td>Branco</td><td>103.667 km</td><td>Flex</td><td>Manual</td><td>R$ 45.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Mercedes-Benz</th><td>C 180</td><td>2015</td><td>Prata</td><td>80.000 km</td><td>Gasolina</td><td>Automático</td><td>R$ 102.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Toyota</th><td>Corolla XEi 2.0</td><td>2015</td><td>Preto</td><td>126.185 km</td><td>Flex</td><td>Automático</td><td>R$ 86.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Honda</th><td>Civic LXR</td><td>2014</td><td>Cinza</td><td>105.000 km</td><td>Flex</td><td>Automático</td><td>R$ 69.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Volkswagen</th><td>Tiguan 2.0 TSI</td><td>2014</td><td>Branco</td><td>152.178 km</td><td>Gasolina</td><td>Automático</td><td>R$ 64.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Ford</th><td>Fiesta Sedan 1.6</td><td>2014</td><td>Prata</td><td>121.118 km</td><td>Flex</td><td>Manual</td><td>R$ 40.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Fiat</th><td>500 Cult Dualogic</td><td>2013</td><td>Prata</td><td>55.000 km</td><td>Flex</td><td>Semiautomático</td><td>R$ 45.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Fiat</th><td>Idea Attractive 1.4</td><td>2013</td><td>Prata</td><td>115.693 km</td><td>Flex</td><td>Manual</td><td>R$ 39.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Chevrolet</th><td>Agile LTZ</td><td>2013</td><td>Vermelho</td><td>160.500 km</td><td>Flex</td><td>Manual</td><td>R$ 35.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Dodge</th><td>Journey R/T</td><td>2012</td><td>Preto</td><td>150.000 km</td><td>Gasolina</td><td>Automático</td><td>R$ 55.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Renault</th><td>Sandero Expression 1.6</td><td>2011</td><td>Vermelho</td><td>144.783 km</td><td>Flex</td><td>Manual</td><td>R$ 25.900,00</td><td>Disponível</td></tr>
+          <tr><th scope="row">Volkswagen</th><td>Polo 1.6</td><td>2010</td><td>Preto</td><td>129.988 km</td><td>Flex</td><td>Manual</td><td>R$ 39.900,00</td><td>Disponível</td></tr>
+          <!-- /BANCO:tabela -->
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="9">Total de veículos catalogados no exemplo: 5 unidades (5 disponíveis).</td>
+            <!-- BANCO:total -->
+            <td colspan="9">Total: 27 veículos disponíveis no banco de dados da loja.</td>
+            <!-- /BANCO:total -->
           </tr>
         </tfoot>
       </table>
+      </div>
     </section>
 
     <section>
       <h2>Fichas Detalhadas dos Veículos</h2>
       <p>A seguir, apresentamos cada veículo de maneira individualizada, destacando seus atributos técnicos e situação comercial:</p>
 
-      <article>
-        <h3>Chevrolet Onix Plus 1.0 Turbo Premier — 2024/2025</h3>
-        <figure>
-          <img src="../assets/img/veiculo-onix.jpg" alt="Sedan Chevrolet Onix Plus Premier cor prata estacionado no pátio" width="480" height="320">
-          <figcaption>Chevrolet Onix Plus 1.0 Turbo — Modelo completo com câmbio automático.</figcaption>
-        </figure>
-        <ul>
-          <li><strong>Marca:</strong> Chevrolet</li>
-          <li><strong>Modelo:</strong> Onix Plus 1.0 Turbo Premier</li>
-          <li><strong>Ano de Fabricação / Modelo:</strong> 2024/2025</li>
-          <li><strong>Cor:</strong> Prata</li>
-          <li><strong>Quilometragem:</strong> 45.500 km</li>
-          <li><strong>Tipo de Combustível:</strong> Flex (Álcool / Gasolina)</li>
-          <li><strong>Tipo de Câmbio:</strong> Automático de 6 marchas</li>
-          <li><strong>Preço Sugerido:</strong> R$ 89.900,00</li>
-          <li><strong>Situação do Veículo:</strong> Disponível no pátio</li>
-          <li><strong>Laudo Cautelar:</strong> Aprovado 100% sem apontamentos</li>
-        </ul>
-        <p><a href="orcamento.html">Solicitar Simulação de entrada ou orçamento para este veículo &rarr;</a></p>
+    <div class="grade-veiculos">
+      <!-- BANCO:fichas -->
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/volkswagen-tera-high-1-0-tsi-2026.jpg" alt="Volkswagen Tera High 1.0 TSI 2026 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Volkswagen Tera High 1.0 TSI — 2026</h3>
+          <p class="card-detalhes">1.000 km &bull; Prata &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 149.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
       </article>
 
-      <article>
-        <h3>Volkswagen T-Cross sense TSI Highline — 2021/2021</h3>
-        <figure>
-          <img src="../assets/img/veiculo-tcross.jpg" alt="SUV Volkswagen T-Cross Highline cor branca visto de frente" width="480" height="320">
-          <figcaption>Volkswagen T-Cross Highline — Motor turbo TSI e bancos em couro.</figcaption>
-        </figure>
-        <ul>
-          <li><strong>Marca:</strong> Volkswagen</li>
-          <li><strong>Modelo:</strong> T-Cross sense TSI </li>
-          <li><strong>Ano de Fabricação / Modelo:</strong> 2021/2021</li>
-          <li><strong>Cor:</strong> Prata</li>
-          <li><strong>Quilometragem:</strong> 79.200 km</li>
-          <li><strong>Tipo de Combustível:</strong> Flex</li>
-          <li><strong>Tipo de Câmbio:</strong> Automático de 6 velocidades</li>
-          <li><strong>Preço Sugerido:</strong> R$ 89.900,00</li>
-          <li><strong>Situação do Veículo:</strong> Disponível no pátio</li>
-          <li><strong>Laudo Cautelar:</strong> Aprovado com laudo emitido</li>
-        </ul>
-        <p><a href="orcamento.html">Solicitar Simulação de entrada ou orçamento para este utilitário &rarr;</a></p>
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/fiat-argo-drive-1-0-2026.jpg" alt="Fiat Argo Drive 1.0 2026 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Fiat Argo Drive 1.0 — 2026</h3>
+          <p class="card-detalhes">38.000 km &bull; Preto &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 75.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
       </article>
 
-      <article>
-        <h3>Fiat Strada Adventure Cabine Dupla — 2014/2014</h3>
-        <figure>
-          <img src="../assets/img/veiculo-strada.jpg" alt="Picape Fiat Strada Adventure cabine dupla cor cinza" width="480" height="320">
-          <figcaption>Fiat Strada Adventure — Cabine dupla ideal para trabalho e lazer.</figcaption>
-        </figure>
-        <ul>
-          <li><strong>Marca:</strong> Fiat</li>
-          <li><strong>Modelo:</strong> Strada Adventure Cabine Dupla</li>
-          <li><strong>Ano de Fabricação / Modelo:</strong> 2014/2014</li>
-          <li><strong>Cor:</strong> Cinza</li>
-          <li><strong>Quilometragem:</strong> 173.000 km</li>
-          <li><strong>Tipo de Combustível:</strong> Flex (Motor Firefly)</li>
-          <li><strong>Tipo de Câmbio:</strong> Manual de 5 marchas</li>
-          <li><strong>Preço Sugerido:</strong> R$ 58.900,00</li>
-          <li><strong>Situação do Veículo:</strong> Disponível no pátio</li>
-          <li><strong>Laudo Cautelar:</strong> Perícia cautelar integralmente aprovada</li>
-        </ul>
-        <p><a href="orcamento.html">Solicitar Simulação de entrada ou orçamento para este utilitário &rarr;</a></p>
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/renault-kwid-zen-2026.jpg" alt="Renault Kwid Zen 2026 cor cinza" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Renault Kwid Zen — 2026</h3>
+          <p class="card-detalhes">32.678 km &bull; Cinza &bull; Manual &bull; Flex</p>
+          <p class="card-preco">R$ 61.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
       </article>
 
-      <article>
-        <h3>Toyota Corolla XEI 2.0 — 2020/2021</h3>
-        <figure>
-          <img src="../assets/img/veiculo-corolla.jpg" alt="Sedan Toyota Corolla XEI 2.0 cor cinza" width="480" height="320">
-          <figcaption>Toyota Corolla XEI 2.0 — Pacote de segurança ativa e conforto premium.</figcaption>
-        </figure>
-        <ul>
-          <li><strong>Marca:</strong> Toyota</li>
-          <li><strong>Modelo:</strong> Corolla XEI 2.0 </li>
-          <li><strong>Ano de Fabricação / Modelo:</strong> 2020/2021</li>
-          <li><strong>Cor:</strong> Cinza Metálico</li>
-          <li><strong>Quilometragem:</strong> 80.620 km</li>
-          <li><strong>Tipo de Combustível:</strong> Flex</li>
-          <li><strong>Tipo de Câmbio:</strong> Automático Direct Shift CVT com 10 marchas simuladas</li>
-          <li><strong>Preço Sugerido:</strong> R$ 125.900,00</li>
-          <li><strong>Situação do Veículo:</strong> Disponível no pátio</li>
-          <li><strong>Laudo Cautelar:</strong> Aprovado sem restrições</li>
-        </ul>
-        <p><a href="orcamento.html">Solicitar Simulação de entrada ou orçamento para o Toyota Corolla &rarr;</a></p>
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/jeep-compass-longitude-t270-2025.jpg" alt="Jeep Compass Longitude T270 2025 cor azul" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Jeep Compass Longitude T270 — 2025</h3>
+          <p class="card-detalhes">49.900 km &bull; Azul &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 141.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
       </article>
 
-      <article>
-        <h3>Renault Kwid 1.0 Zen — 2025/2026</h3>
-        <figure>
-          <img src="../assets/img/veiculo-kwid.jpg" alt="Compacto Renault Kwid Zen cor cinza" width="480" height="320">
-          <figcaption>Renault Kwid Zen — Excelente consumo de combustível e baixa quilometragem.</figcaption>
-        </figure>
-        <ul>
-          <li><strong>Marca:</strong> Renault</li>
-          <li><strong>Modelo:</strong> Kwid 1.0 Zen</li>
-          <li><strong>Ano de Fabricação / Modelo:</strong> 2025/2026</li>
-          <li><strong>Cor:</strong> Laranja</li>
-          <li><strong>Quilometragem:</strong> 32.678 km</li>
-          <li><strong>Tipo de Combustível:</strong> Flex</li>
-          <li><strong>Tipo de Câmbio:</strong> Manual de 5 velocidades</li>
-          <li><strong>Preço Sugerido:</strong> R$ 63.900,00</li>
-          <li><strong>Situação do Veículo:</strong> Disponível no pátio</li>
-          <li><strong>Garantia:</strong> Elegível à garantia contratual de 2 meses</li>
-        </ul>
-        <p><a href="orcamento.html">Solicitar Simulação de entrada ou orçamento para o Renault Kwid &rarr;</a></p>
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/hyundai-creta-comfort-1-0-turbo-2025.jpg" alt="Hyundai Creta Comfort 1.0 Turbo 2025 cor branco" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Hyundai Creta Comfort 1.0 Turbo — 2025</h3>
+          <p class="card-detalhes">27.163 km &bull; Branco &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 135.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
       </article>
-    </section>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/chevrolet-onix-plus-premier-1-0-turbo-2025.jpg" alt="Chevrolet Onix Plus Premier 1.0 Turbo 2025 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Chevrolet Onix Plus Premier 1.0 Turbo — 2025</h3>
+          <p class="card-detalhes">45.680 km &bull; Prata &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 99.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/nissan-frontier-pro-4x-2024.jpg" alt="Nissan Frontier Pro-4X 2024 cor cinza" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Nissan Frontier Pro-4X — 2024</h3>
+          <p class="card-detalhes">34.400 km &bull; Cinza &bull; Automático &bull; Diesel</p>
+          <p class="card-preco">R$ 225.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/chevrolet-equinox-premier-2024.jpg" alt="Chevrolet Equinox Premier 2024 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Chevrolet Equinox Premier — 2024</h3>
+          <p class="card-detalhes">44.150 km &bull; Preto &bull; Manual &bull; Gasolina</p>
+          <p class="card-preco">R$ 145.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/chevrolet-onix-ltz-1-0-turbo-2024.jpg" alt="Chevrolet Onix LTZ 1.0 Turbo 2024 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Chevrolet Onix LTZ 1.0 Turbo — 2024</h3>
+          <p class="card-detalhes">15.224 km &bull; Preto &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 89.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/toyota-corolla-cross-xrx-hybrid-2023.jpg" alt="Toyota Corolla Cross XRX Hybrid 2023 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Toyota Corolla Cross XRX Hybrid — 2023</h3>
+          <p class="card-detalhes">60.126 km &bull; Preto &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 149.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/toyota-corolla-gli-2023.jpg" alt="Toyota Corolla GLi 2023 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Toyota Corolla GLi — 2023</h3>
+          <p class="card-detalhes">84.085 km &bull; Preto &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 119.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/chevrolet-onix-plus-premier-1-0-turbo-2023.jpg" alt="Chevrolet Onix Plus Premier 1.0 Turbo 2023 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Chevrolet Onix Plus Premier 1.0 Turbo — 2023</h3>
+          <p class="card-detalhes">28.900 km &bull; Preto &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 77.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/jeep-compass-longitude-diesel-2021.jpg" alt="Jeep Compass Longitude Diesel 2021 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Jeep Compass Longitude Diesel — 2021</h3>
+          <p class="card-detalhes">113.485 km &bull; Preto &bull; Automático &bull; Diesel</p>
+          <p class="card-preco">R$ 109.000,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/volkswagen-t-cross-sense-tsi-2021.jpg" alt="Volkswagen T-Cross Sense TSI 2021 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Volkswagen T-Cross Sense TSI — 2021</h3>
+          <p class="card-detalhes">79.275 km &bull; Prata &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 89.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/fiat-toro-freedom-turbo-diesel-2019.jpg" alt="Fiat Toro Freedom Turbo Diesel 2019 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Fiat Toro Freedom Turbo Diesel — 2019</h3>
+          <p class="card-detalhes">107.000 km &bull; Prata &bull; Automático &bull; Diesel</p>
+          <p class="card-preco">R$ 102.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/ford-ka-sedan-se-1-5-2018.jpg" alt="Ford Ka Sedan SE 1.5 2018 cor branco" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Ford Ka Sedan SE 1.5 — 2018</h3>
+          <p class="card-detalhes">103.667 km &bull; Branco &bull; Manual &bull; Flex</p>
+          <p class="card-preco">R$ 45.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/mercedes-benz-c-180-2015.jpg" alt="Mercedes-Benz C 180 2015 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Mercedes-Benz C 180 — 2015</h3>
+          <p class="card-detalhes">80.000 km &bull; Prata &bull; Automático &bull; Gasolina</p>
+          <p class="card-preco">R$ 102.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/toyota-corolla-xei-2-0-2015.jpg" alt="Toyota Corolla XEi 2.0 2015 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Toyota Corolla XEi 2.0 — 2015</h3>
+          <p class="card-detalhes">126.185 km &bull; Preto &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 86.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/honda-civic-lxr-2014.jpg" alt="Honda Civic LXR 2014 cor cinza" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Honda Civic LXR — 2014</h3>
+          <p class="card-detalhes">105.000 km &bull; Cinza &bull; Automático &bull; Flex</p>
+          <p class="card-preco">R$ 69.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/volkswagen-tiguan-2-0-tsi-2014.jpg" alt="Volkswagen Tiguan 2.0 TSI 2014 cor branco" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Volkswagen Tiguan 2.0 TSI — 2014</h3>
+          <p class="card-detalhes">152.178 km &bull; Branco &bull; Automático &bull; Gasolina</p>
+          <p class="card-preco">R$ 64.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/ford-fiesta-sedan-1-6-2014.jpg" alt="Ford Fiesta Sedan 1.6 2014 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Ford Fiesta Sedan 1.6 — 2014</h3>
+          <p class="card-detalhes">121.118 km &bull; Prata &bull; Manual &bull; Flex</p>
+          <p class="card-preco">R$ 40.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/fiat-500-cult-dualogic-2013.jpg" alt="Fiat 500 Cult Dualogic 2013 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Fiat 500 Cult Dualogic — 2013</h3>
+          <p class="card-detalhes">55.000 km &bull; Prata &bull; Semiautomático &bull; Flex</p>
+          <p class="card-preco">R$ 45.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/fiat-idea-attractive-1-4-2013.jpg" alt="Fiat Idea Attractive 1.4 2013 cor prata" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Fiat Idea Attractive 1.4 — 2013</h3>
+          <p class="card-detalhes">115.693 km &bull; Prata &bull; Manual &bull; Flex</p>
+          <p class="card-preco">R$ 39.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/chevrolet-agile-ltz-2013.jpg" alt="Chevrolet Agile LTZ 2013 cor vermelho" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Chevrolet Agile LTZ — 2013</h3>
+          <p class="card-detalhes">160.500 km &bull; Vermelho &bull; Manual &bull; Flex</p>
+          <p class="card-preco">R$ 35.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/dodge-journey-r-t-2012.jpg" alt="Dodge Journey R/T 2012 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Dodge Journey R/T — 2012</h3>
+          <p class="card-detalhes">150.000 km &bull; Preto &bull; Automático &bull; Gasolina</p>
+          <p class="card-preco">R$ 55.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/renault-sandero-expression-1-6-2011.jpg" alt="Renault Sandero Expression 1.6 2011 cor vermelho" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Renault Sandero Expression 1.6 — 2011</h3>
+          <p class="card-detalhes">144.783 km &bull; Vermelho &bull; Manual &bull; Flex</p>
+          <p class="card-preco">R$ 25.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+
+      <article class="card-veiculo">
+        <div class="card-midia">
+          <img src="../assets/img/estoque/volkswagen-polo-1-6-2010.jpg" alt="Volkswagen Polo 1.6 2010 cor preto" class="card-foto" width="800" height="600" loading="lazy">
+          <span class="selo-card">Laudo Aprovado</span>
+        </div>
+        <div class="card-corpo">
+          <h3 class="card-titulo">Volkswagen Polo 1.6 — 2010</h3>
+          <p class="card-detalhes">129.988 km &bull; Preto &bull; Manual &bull; Flex</p>
+          <p class="card-preco">R$ 39.900,00</p>
+          <a href="orcamento.html" class="btn btn-primario card-acao">Solicitar Orçamento</a>
+        </div>
+      </article>
+      <!-- /BANCO:fichas -->
+    </div>
+  </section>
   </main>
 
-  <footer>
-    <section aria-labelledby="rodape-contato">
-      <h2 id="rodape-contato">Contato</h2>
-      <address>
-        R. Goiapi, 160 - Vila Sao Geraldo, São Paulo - SP, 03609-010 <br>
-        Telefone: <a href="tel:+551126474000">(11) 2647-4000</a>
-        <br>
-        E-mail: <a href="mailto:multiplikar.oficial@gmail.com">multiplikar.oficial@gmail.com</a>
-        <br>
-        <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <br>
-        <a href="https://www.facebook.com/Multiplikarconcessionaria" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <br>
-        <a href="https://www.instagram.com/multiplikar.oficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      </address>
-    </section>
-    <p>Projeto acadêmico de Desenvolvimento Frontend para Web — Integrantes: Andrey Azevedo Veloso e Brenno Lima do Vale.</p>
-    <p>&copy; 2026 Multiplikar Automóveis. Todos os direitos reservados.</p>
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="rodape-site">
+    <div class="rodape-conteiner">
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Multiplikar Automóveis</h3>
+        <p>Comércio especializado de veículos novos, seminovos e usados no bairro Vila São Geraldo.</p>
+        <address>
+          R. Goiapi, 160 - Vila São Geraldo, São Paulo - SP, 03609-010 <br>
+          Telefone: <a href="tel:+551126474000">(11) 2647-4000</a> <br>
+          E-mail: <a href="mailto:multiplikar.oficial@gmail.com">multiplikar.oficial@gmail.com</a>
+        </address>
+        <p class="rodape-horario">
+          <strong>Horário de atendimento</strong><br>
+          Segunda a sexta: 8h30 às 18h<br>
+          Sábado: 8h30 às 13h<br>
+          Domingo e feriados: fechado
+        </p>
+        <div class="rodape-redes">
+          <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/multiplikar.oficial/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="rodape-coluna">
+        <h3 class="rodape-titulo">Localização</h3>
+        <iframe
+          src="https://maps.google.com/maps?q=R.%20Goiapi,%20160%20-%20Vila%20Sao%20Geraldo,%20S%C3%A3o%20Paulo%20-%20SP,%2003609-010&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          height="220"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de localização da loja Multiplikar Automóveis">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <div class="rodape-creditos">
+        <p>Projeto acadêmico de Desenvolvimento Frontend para Web — Integrantes: Andrey Azevedo Veloso e Brenno Lima do Vale.</p>
+        <p>&copy; 2026 Multiplikar Automóveis. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- BOTÃO FIXO DO WHATSAPP -->
+  <a href="https://wa.me/551126474000?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante" aria-label="Fale conosco pelo WhatsApp (abre em nova aba)">
+    <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.751.815 2.79.815 3.184 0 5.77-2.586 5.77-5.767.001-3.18-2.583-5.765-5.769-5.765zm8.969 5.768c0 4.963-4.032 8.995-8.97 8.995-1.574 0-3.076-.411-4.385-1.127l-5.645 1.478 1.508-5.508c-.808-1.371-1.278-2.969-1.278-4.67 0-4.963 4.032-8.995 8.97-8.995 4.962 0 8.97 4.032 8.97 8.995z"/>
+    </svg>
+    <span>Fale conosco</span>
+  </a>
+
+  <script src="../assets/js/tema.js" defer></script>
+  <script src="../assets/js/menu.js" defer></script>
 </body>
 </html>

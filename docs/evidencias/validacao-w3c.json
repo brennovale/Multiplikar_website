@@ -1,0 +1,85 @@
+{
+  "data_consulta": "2026-11-05",
+  "html_checker": "https://validator.w3.org/nu/",
+  "paginas_html": [
+    {
+      "arquivo": "index.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/avaliacao.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/compra-veiculos.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/consignacao.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/contato.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/estoque.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/financiamento.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/garantia.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/orcamento.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/sistema.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    },
+    {
+      "arquivo": "pages/vendas.html",
+      "erros": 0,
+      "avisos": 0,
+      "mensagens": []
+    }
+  ],
+  "css_validator": "https://jigsaw.w3.org/css-validator/",
+  "css": {
+    "uri": "design-system.css",
+    "checkedby": "http://www.w3.org/2005/07/css-validator",
+    "csslevel": "css3",
+    "date": "2026-11-05T09:28:09Z",
+    "timestamp": "1793914089074",
+    "validity": true,
+    "result": {
+      "errorcount": 0,
+      "warningcount": 0
+    }
+  }
+}
