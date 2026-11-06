@@ -62,7 +62,7 @@ A estrutura HTML da Entrega 1 foi ampliada com uma identidade visual compartilha
 
 As páginas utilizam `header`, `nav`, `main`, `section`, `article` e `footer`, com um título principal por página. As tabelas possuem cabeçalhos e legendas; os formulários associam rótulos aos campos e usam validação nativa com `required`, `pattern` e tipos específicos. Os ícones SVG acompanham a cor do componente. Áudio e vídeo estão armazenados em `assets/`.
 
-### Pesquisa de leiaute e identidade visual
+### Pesquisa de layout e identidade visual
 
 Foram reunidas dez referências do setor automotivo, com registro de fontes, características e medições em [design-system/sites.md](design-system/sites.md). A busca de veículos, a fotografia do estoque, a navegação por serviços e as chamadas para contato orientaram a composição do site. O azul foi adotado para ações e links; o verde destaca contato e negociação. Fontes do sistema reduzem dependências e mantêm a leitura consistente.
 
