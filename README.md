@@ -74,6 +74,8 @@ O [exemplo de componentes](design-system/exemplo.html) reúne menu, destaque, tr
 
 ### Formulários e integração
 
+O site foi integrado ao banco desenvolvido pelo grupo na disciplina de Modelagem de Dados, também voltado à Multiplikar Automóveis. Essa integração conecta a interface aos dados e processos modelados, permitindo aplicar conjuntamente os conhecimentos das duas disciplinas. Na Entrega 2 de Frontend, o banco constitui um recurso complementar aos requisitos de HTML, CSS e JavaScript. O modelo, os scripts SQL e a documentação acadêmica estão no [repositório de Modelagem de Dados](https://github.com/andreyveloso/modelagem-banco-multiplikar-automoveis).
+
 Contato e orçamento utilizam validação básica do navegador. O JavaScript apresenta o resultado do envio; as funções de `api/` encaminham os dados ao serviço da organização. As configurações de conexão são fornecidas por variáveis de ambiente no servidor. A implementação complementar da API Python e a documentação do banco estão em `servidor/`.
 
 ### Uso de inteligência artificial

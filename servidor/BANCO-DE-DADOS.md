@@ -1,5 +1,11 @@
 # Site e banco de dados do projeto
 
+## Origem acadêmica
+
+O banco de dados foi desenvolvido no trabalho da disciplina de Modelagem de Dados sobre a Multiplikar Automóveis. Sua integração ao site permite aplicar os processos modelados à interface da mesma organização. Na entrega de Desenvolvimento Frontend para Web, essa integração é complementar ao trabalho de HTML, CSS e JavaScript.
+
+O modelo, os scripts SQL, as instruções de execução e as evidências do trabalho de banco estão no [repositório de Modelagem de Dados](https://github.com/andreyveloso/modelagem-banco-multiplikar-automoveis). A pasta `servidor/` deste site reúne os componentes de integração e a documentação correspondente.
+
 ## Arquitetura
 
 O sistema usa MySQL 8.4. O navegador acessa o site e a API Python; somente a API se conecta ao banco. A API usa PyMySQL, consultas fixas e procedures para gravações.
