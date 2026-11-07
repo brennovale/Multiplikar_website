@@ -41,6 +41,12 @@ Dados do registro da reunião:
 - **Nome do proprietário entrevistado:** Regis Umbelino;
 - **Local da reunião:** Multiplikar Automóveis, bairro Vila São Geraldo;
 
+ ### Registro fotográfico da visita
+
+A fotografia abaixo registra a visita presencial à Multiplikar Automóveis, realizada como parte das atividades de levantamento de informações para o projeto acadêmico.
+
+![Registro da visita presencial à Multiplikar Automóveis](docs/evidencias/visita_multiplikar.jpg)
+
 
 ## Desenvolvimento
 
