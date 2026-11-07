@@ -98,6 +98,18 @@ O site está publicado na Vercel em https://multiplikar-web.vercel.app/. As onze
 
 O domínio próprio escolhido para uma futura aquisição é `multiplikarautomoveis.com.br`, registrado como disponível na consulta apresentada pelo grupo. A pesquisa das alternativas, as capturas e o procedimento de aquisição estão em [domínio e publicação](docs/dominio-e-publicacao.md).
 
+### Validação do HTML
+
+![Resultado da validação do HTML pelo Nu Html Checker](docs/evidencias/validacao-html.jpg)
+
+### Validação do CSS
+
+![Resultado da validação do CSS pelo W3C](docs/evidencias/validacao_css.jpg)
+
+### Avisos da validação
+
+![Avisos da validação](docs/evidencias/avisos_validação.jpg)
+
 ## Estrutura dos arquivos
 
 ```text
