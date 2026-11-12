@@ -46,5 +46,5 @@ O modelo informado pelo grupo foi Codex Luna 6, com nível High, utilizado no Ma
 - [Tokens comentados](../design-system/tokens.css) e [exemplo de componentes](../design-system/exemplo.html).
 - [Validação HTML e CSS](validacao-w3c.md), com zero erros no CSS publicado e treze avisos informativos.
 - [Domínio e publicação](dominio-e-publicacao.md), com três capturas de disponibilidade.
-- [Registro fotográfico da entrevista](../assets/img/evidencias/entrevista-multiplikar-2026-10.jpg).
+- [Registro fotográfico da entrevista](../assets/img/evidencias/entrevista-multiplikar-2026-10.svg).
 - Site publicado: https://multiplikar-web.vercel.app/.

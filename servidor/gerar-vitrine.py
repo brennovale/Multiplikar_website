@@ -3,7 +3,7 @@
 Lê os veículos com situação DISPONIVEL (view vw_veiculo_situacao do projeto), com o
 preço anunciado da entrada vigente e a quilometragem da avaliação, e escreve os cartões
 e as tabelas em HTML puro entre os marcadores <!-- BANCO:... --> das páginas.
-Só entram carros que têm foto em assets/img/estoque/<marca-modelo-ano>.jpg.
+Só entram carros que têm foto em assets/img/estoque/<marca-modelo-ano>.svg.
 
 Uso (com o banco multiplikar carregado, inclusive sql/extensao/06-estoque-loja.sql):
   python servidor/gerar-vitrine.py --dsn "host=127.0.0.1 port=3306 user=api_leitura password=... database=multiplikar"
@@ -96,7 +96,7 @@ def main():
             carros = [dict(zip(nomes, linha)) for linha in cur.fetchall()]
     pasta = os.path.join(RAIZ, "assets", "img", "estoque")
     for v in carros:
-        v["foto"] = slug(v["marca"], v["modelo"], v["ano_modelo"]) + ".jpg"
+        v["foto"] = slug(v["marca"], v["modelo"], v["ano_modelo"]) + ".svg"
     com_foto = [v for v in carros if os.path.exists(os.path.join(pasta, v["foto"]))]
     destaque = com_foto[:QTD_DESTAQUE]
 

@@ -45,7 +45,7 @@ Dados do registro da reunião:
 
 A fotografia abaixo registra a visita presencial à Multiplikar Automóveis, realizada como parte das atividades de levantamento de informações para o projeto acadêmico.
 
-![Registro da visita presencial à Multiplikar Automóveis](docs/evidencias/visita_multiplikar.jpg)
+![Registro da visita presencial à Multiplikar Automóveis](docs/evidencias/visita_multiplikar.svg)
 
 
 ## Desenvolvimento
@@ -100,15 +100,15 @@ O domínio próprio escolhido para uma futura aquisição é `multiplikarautomov
 
 ### Validação do HTML
 
-![Resultado da validação do HTML pelo Nu Html Checker](docs/evidencias/validacao-html.jpg)
+![Resultado da validação do HTML pelo Nu Html Checker](docs/evidencias/validacao-html.svg)
 
 ### Validação do CSS
 
-![Resultado da validação do CSS pelo W3C](docs/evidencias/validacao_css.jpg)
+![Resultado da validação do CSS pelo W3C](docs/evidencias/validacao_css.svg)
 
 ### Avisos da validação
 
-![Avisos da validação](docs/evidencias/avisos_validação.jpg)
+![Avisos da validação](docs/evidencias/avisos_validação.svg)
 
 ## Estrutura dos arquivos
 

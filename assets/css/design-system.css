@@ -927,7 +927,7 @@ main > .secao-hero {
   padding: var(--espaco-xxl, 3rem) var(--espaco-l, 1.5rem);
   padding-bottom: calc(var(--espaco-xxl, 3rem) + var(--espaco-xl, 2rem)); /* espaço para o botão Pausar vídeo */
   border: 0;
-  background: var(--cor-secundaria, #0f172a) url("../img/fachada-loja.jpg") center / cover no-repeat;
+  background: var(--cor-secundaria, #0f172a) url("../img/fachada-loja.svg") center / cover no-repeat;
 }
 @media screen and (min-width: 768px) {
   main > .secao-hero {
