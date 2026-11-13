@@ -7,6 +7,10 @@
 **Site publicado:** https://multiplikar-web.vercel.app/  
 **Repositório:** https://github.com/brennovale/Multiplikar_website
 
+Apresentação do projeto em vídeo, narrada pelos dois integrantes:
+
+**Assista em:** https://www.youtube.com/watch?v=UrBBGkDIqLQ
+
 ## Introdução
 
 O projeto apresenta a Multiplikar Automóveis, revenda de veículos novos, seminovos e usados localizada na Vila São Geraldo. O site reúne informações sobre compra, venda, troca, consignação, avaliação, financiamento e atendimento pós-venda. Seu objetivo é facilitar a consulta aos serviços e o contato com a loja por meio de páginas interligadas e formulários de atendimento.
